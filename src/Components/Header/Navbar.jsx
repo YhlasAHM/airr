@@ -39,7 +39,7 @@ const Navbar = () => {
                                     <div className="col-md-10 col-12">
                                         <div className='mt-5 d-block d-xl-flex justify-content-between text-center'>
                                             <Air_button navigate_='/online_table' title="Onlayn tablo" img={plane_one} background_btn='#009000' color_btn='white' />
-                                            <Air_button navigate_='/partners' title="Hyzmatlarymyz" img={plane_one} background_btn='#009000' color_btn='white' />
+                                            <Air_button navigate_='/services' title="Hyzmatlarymyz" img={plane_one} background_btn='#009000' color_btn='white' />
                                             <Air_button navigate_='/passengers' title="Yolagcylar ucin" img={plane_one} background_btn='#009000' color_btn='white' />
                                         </div>
                                     </div>
