@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
 
-import SearchIcon from '@mui/icons-material/Search';
-
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-
 import { Link, useLocation } from 'react-router-dom'
 
 const Header_footer = () => {
@@ -39,8 +35,8 @@ const Header_footer = () => {
         if (location.pathname == '/gallery') {
             setVisibleTab('gallery')
         }
-        if (location.pathname == '/partners') {
-            setVisibleTab('partners')
+        if (location.pathname == '/contact') {
+            setVisibleTab('contact')
         }
 
     }, [location])
@@ -50,7 +46,7 @@ const Header_footer = () => {
             <div className="Header_footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-9">
+                        <div className="col-12">
                             <div className='header_footer_left'>
                                 <ul>
                                     <li>
@@ -86,27 +82,8 @@ const Header_footer = () => {
                                         <div className={visible_tab == 'gallery' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/partners'}>Habarlasmak</Link>
-                                        <div className={visible_tab == 'partners' ? 'bottom_' : null}></div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className=" offset-1 col-2">
-                            <div className="header_footer_right">
-                                <ul className='d-flex ' style={{ alignItems: 'center' }}>
-                                    <li>
-                                        <a type='button' href="#">
-                                            <SearchIcon />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a type='button' href="#">
-                                            <div className='icon'>
-                                                <PermIdentityIcon />
-                                            </div>
-                                            <div> Ulgama gir </div>
-                                        </a>
+                                        <Link to={'/contact'}>Habarlasmak</Link>
+                                        <div className={visible_tab == 'contact' ? 'bottom_' : null}></div>
                                     </li>
                                 </ul>
                             </div>
