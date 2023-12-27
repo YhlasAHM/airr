@@ -45,8 +45,6 @@ const Header_footer = () => {
 
     }, [location])
 
-    console.log(location.pathname, ' ', visible_tab)
-
     return (
         <>
             <div className="Header_footer">
