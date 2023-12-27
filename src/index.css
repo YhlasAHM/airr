@@ -1,0 +1,150 @@
+.disable {
+    display: block !important;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+.title_ {
+    position: relative;
+}
+
+.fly {
+    transition: all 1s;
+    position: absolute;
+    left: 85%;
+}
+
+.fly_two {
+    transition: all 1s;
+    position: absolute;
+    right: 85%;
+}
+
+.active_img_one {
+    transition: all 1s;
+    position: absolute !important;
+    left: 0;
+}
+
+.active_img_two {
+    transition: all 1s;
+    position: absolute !important;
+    right: 0;
+}
+
+.fly img,
+.fly_two img {
+    width: 3rem;
+}
+
+.v_100 {
+    width: 100% !important;
+    min-height: 100vh !important;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App {
+    min-height: 100vh;
+}
+
+
+@media screen and (max-width:1200px) {
+    .fly {
+        transition: all 1s;
+        position: absolute;
+        left: 32%;
+    }
+
+    .fly_two {
+        transition: all 1s;
+        position: absolute;
+        right: 32%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .fly {
+        transition: all 1s;
+        position: absolute;
+        left: 23%;
+    }
+
+    .fly_two {
+        transition: all 1s;
+        position: absolute;
+        right: 23%;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .fly {
+        transition: all 1s;
+        position: absolute;
+        left: 15%;
+    }
+
+    .fly_two {
+        transition: all 1s;
+        position: absolute;
+        right: 15%;
+    }
+
+}
+
+
+@media screen and (max-width:530px) {
+    .fly {
+        transition: all 1s;
+        position: absolute;
+        left: 13%;
+    }
+
+    .fly_two {
+        transition: all 1s;
+        position: absolute;
+        right: 13%;
+    }
+
+}
+
+
+@media screen and (max-width:460px) {
+    .fly {
+        transition: all 1s;
+        position: absolute;
+        left: 10%;
+    }
+
+    .fly_two {
+        transition: all 1s;
+        position: absolute;
+        right: 10%;
+    }
+
+}
+
+@media screen and (max-width:370px) {
+    .fly {
+        transition: all 1s;
+        position: absolute;
+        left: 3%;
+    }
+
+    .fly_two {
+        transition: all 1s;
+        position: absolute;
+        right: 3%;
+    }
+
+}

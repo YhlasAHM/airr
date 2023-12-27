@@ -1,0 +1,27 @@
+.we_flyy {
+    background-image: linear-gradient(to right, #009000 30%, #a79132);
+}
+
+.rotate_image {
+    position: relative;
+}
+
+.rotate_image img {
+    position: absolute;
+    width: 6rem;
+}
+
+.rotate_image .img_one img {
+    top: 5rem;
+    left: 2rem;
+}
+
+.rotate_image .img_two img {
+    top: 14rem;
+    left: 8rem;
+}
+
+.rotate_image .img_three img {
+    top: 4rem;
+    left: 12rem;
+}

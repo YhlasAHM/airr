@@ -1,0 +1,41 @@
+iframe#webpack-dev-server-client-overlay {
+    display: none !important
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #009000;
+    border-radius: 1rem;
+}
+
+
+.back_top {
+    background-color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 6rem;
+    right: 1.5rem;
+    z-index: 999999 !important;
+    color: #009000;
+    border: 1px solid #009000;
+    padding: 5px;
+    transition: all .5s;
+}
+
+.back_top:hover {
+    background-color: #009000;
+    color: white;
+}
+
+
+.back_top * {
+    font-size: 2.5rem !important;
+}

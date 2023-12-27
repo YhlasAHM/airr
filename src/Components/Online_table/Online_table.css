@@ -1,0 +1,8 @@
+.table_box {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: .5px .5px 1px #eeeeee, -.5px -.5px 1px #eeeeee;
+}
