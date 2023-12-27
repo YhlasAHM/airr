@@ -11,6 +11,7 @@ import plane_one from '../../assets/images/Group_1.png'
 
 import DateRangeIcon from '@mui/icons-material/DateRange';
 
+
 const News = ({ visible }) => {
 
     return (
@@ -57,7 +58,7 @@ const News = ({ visible }) => {
                         }
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <Air_button title="Ahlisini gorkez" img={plane_one} background_btn='#009000' color_btn='white' />
+                        <Air_button navigate_='/news' title="Ahlisini gorkez" img={plane_one} background_btn='#009000' color_btn='white' />
                     </div>
                 </div>
             </div>

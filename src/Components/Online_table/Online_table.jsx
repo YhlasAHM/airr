@@ -15,10 +15,6 @@ import plane from '../../assets/images/Group_1.png'
 import image from '../../assets/images/Rectangle_39.png'
 
 
-const onChange = (key) => {
-    console.log(key);
-};
-
 const items = [
     {
         key: '1',
@@ -86,10 +82,10 @@ const Online_table = ({ visible }) => {
                             <div className='ms-2'>Указано местное время</div>
                         </div>
                     </div>
-                    <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+                    <Tabs defaultActiveKey="1" items={items} />
                 </div>
                 <div className='d-flex justify-content-center mt-4'>
-                    <Air_button title="Ahlisini gorkez" img={plane} background_btn='#009000' color_btn='white' />
+                    <Air_button navigate_='/online_table' title="Ahlisini gorkez" img={plane} background_btn='#009000' color_btn='white' />
                 </div>
             </div>
 
