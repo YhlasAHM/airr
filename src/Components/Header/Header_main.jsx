@@ -107,7 +107,7 @@ const Header_main = () => {
                         <h5 className='text-white'><Link to={'/services'}>Hyzmatlarymyz</Link></h5>
                         <h5 className='text-white'><Link to={'/news'}>Tazelikler</Link></h5>
                         <h5 className='text-white'><Link to={'/gallery'}>Galereya</Link></h5>
-                        <h5 className='text-white'><Link to={'/partners'}>Habarlasmak</Link></h5>
+                        <h5 className='text-white'><Link to={'/contact'}>Habarlasmak</Link></h5>
                     </div>
                     <div className='sidebar_footer mt-3'>
                         <div className='phone_and_email_sidebar d-flex' style={{ flexDirection: 'column' }}>

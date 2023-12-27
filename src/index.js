@@ -8,7 +8,7 @@ import { Suspense } from 'react';
 
 import { BrowserRouter } from 'react-router-dom'
 
-import logo from './assets/images/logo_one.png'
+import logo from './assets/images/AHHM-Preloader.gif'
 
 const Loading = () => {
   return (
