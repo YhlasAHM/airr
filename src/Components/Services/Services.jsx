@@ -49,6 +49,10 @@ const Services = () => {
                         </div>
                         <div class="col-xl-8">
                             <OwlCarousel
+                                autoplay
+                                autoplayTimeout={2000}
+                                autoplayHoverPause={true}
+                                loop
                                 navText={state.navText}
                                 items={3}
                                 className="owl-theme"
@@ -73,7 +77,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

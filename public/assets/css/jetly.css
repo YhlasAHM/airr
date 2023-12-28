@@ -6756,10 +6756,10 @@ ul {
   transition: all 500ms ease;
 }
 
-/* .benefits-one__single:hover .benefits-one__arrow a {
+.benefits-one__single:hover .benefits-one__arrow a {
   color: var(--jetly-white);
-  background-color: var(--jetly-base);
-} */
+  background-color: #009000;
+}
 
 /*--------------------------------------------------------------
 # Counter Two

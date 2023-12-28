@@ -10,6 +10,10 @@ import { BrowserRouter } from 'react-router-dom'
 
 import logo from './assets/images/AHHM-Preloader.gif'
 
+import store from './store';
+import { Provider } from 'react-redux';
+
+
 const Loading = () => {
   return (
     <div className='loading v_100'>
@@ -24,9 +28,11 @@ const root = ReactDOM.createRoot(document.getElementById('__react'));
 
 root.render(
   <Suspense fallback={<Loading />}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter >
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter >
+    </Provider>
   </Suspense>
 );
 

@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './News_detail.css'
 
 import image from '../../../assets/images/blog/news-details-img-1.jpg'
 
 import img_one from '../../../assets/images/blog/lp-1-1.jpg'
+import { useDispatch } from 'react-redux'
 
 const News_detail = () => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getNew())
+    }, [])
+
 
     return (
         <div class="news-details">

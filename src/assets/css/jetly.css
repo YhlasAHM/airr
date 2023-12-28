@@ -3456,6 +3456,7 @@ ul {
   left: -400px;
   margin: 0;
 }
+
 /* 
 .price-one__carousel.owl-theme .owl-nav .owl-next {
   height: 50px;
@@ -4823,7 +4824,7 @@ ul {
   padding: 160px 0 120px;
   z-index: 1;
   background-color: var(--jetly-black);
-/*   background-image: url(../images/backgrounds/video-one-bg-1.jpg); */
+  /*   background-image: url(../images/backgrounds/video-one-bg-1.jpg); */
   background-size: cover;
 }
 
@@ -6309,7 +6310,7 @@ ul {
   right: 0;
   bottom: 0;
   content: "";
-  background-color: var(--jetly-black);
+  background-color: #009000;
   transform: scaleX(0.7) rotateX(20deg);
   opacity: 0;
   transition: all 0.4s linear;
@@ -6383,7 +6384,7 @@ ul {
 
 .benefits-one__single:hover .benefits-one__arrow a {
   color: var(--jetly-white);
-  background-color: var(--jetly-base);
+  background-color: #009000 !important;
 }
 
 /*--------------------------------------------------------------

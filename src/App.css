@@ -23,7 +23,7 @@ iframe#webpack-dev-server-client-overlay {
     position: fixed;
     bottom: 6rem;
     right: 1.5rem;
-    z-index: 999999 !important;
+    z-index: 9999999 !important;
     color: #009000;
     border: 1px solid #009000;
     padding: 5px;
