@@ -43,6 +43,12 @@ const About = lazy(() => import('./Components/Page/About/About'))
 
 const News_detail = lazy(() => import('./Components/Page/News_detail/News_detail'))
 
+const Services_detail = lazy(() => import('./Components/Page/Services_detail/Services_detail'))
+
+const Passengers_detail = lazy(() => import('./Components/Page/Passengers_detail/Passenger_detail'))
+
+const Partners_detail = lazy(() => import('./Components/Page/Partners_detail/Partners_detail'))
+
 
 function App() {
 
@@ -76,6 +82,9 @@ function App() {
           <Routes>
             <Route index path='/' element={<HomePage />} />
             <Route path='news/:id' element={<News_detail />} />
+            <Route path='services/:id' element={<Services_detail />} />
+            <Route path='passengers/:id' element={<Passengers_detail />} />
+            <Route path='partners/:id' element={<Partners_detail />} />
             <Route path='gallery' element={<GalleryPage />} />
             <Route path='contact' element={<Contact />} />
             <Route path='news' element={<News />} />

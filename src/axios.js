@@ -43,7 +43,7 @@ export default config;  */
 import axios from 'axios'
 
 const config = axios.create({
-    baseURL: `http://95.85.127.28:3008`,
+    baseURL: `http://95.85.127.28:3008/`,
     headers: {
         'Content-Type': 'application/json',
         /* 'Authorization': `Bearer ${localStorage.getItem("userinfo")

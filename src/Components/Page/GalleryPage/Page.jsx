@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Page.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { getGallery } from '../../../actions/gallery.action'
 
 const GalleryPage = () => {
 
+    const [page, setPage] = useState(1)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getGallery(page))
+    }, [page])
+
+    const gallery = useSelector(state => state.gallery)
+    console.log('gallery:::::', gallery)
+
     return (
         <>
-            <section class="gallery-page">
+            <div class="gallery-page">
                 <div class="container">
                     <div class="section-title text-center">
                         <h1 class="fw-bold">SURATLAR</h1>
@@ -27,8 +39,11 @@ const GalleryPage = () => {
                             ))
                         }
                     </div>
+                    <div className='text-center'>
+                        <button type='button' onClick={() => setPage(page + 1)}> Yenede </button>
+                    </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

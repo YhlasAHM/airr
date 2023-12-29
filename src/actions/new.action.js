@@ -1,5 +1,6 @@
 import { news } from "./constants";
-import axios from "axios";
+
+import axios from "../axios";
 
 export const getNew = (props) => {
 
@@ -8,7 +9,7 @@ export const getNew = (props) => {
         try {
 
             dispatch({ type: news.GET_SINGLE_NEW_REQUEST });
-            const res = await axios.get(`/api/products/${props}`);
+            const res = await axios.get(`en/api/news/${props}`);
             if (res.status === 200 || res.status == 201) {
                 dispatch({
                     type: news.GET_SINGLE_NEW_SUCCESS,

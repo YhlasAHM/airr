@@ -1,0 +1,9 @@
+.sidebar {
+    position: sticky;
+    top: 10px;
+    left: 0;
+}
+
+.sidebar__post-content a {
+    text-decoration: none;
+}
