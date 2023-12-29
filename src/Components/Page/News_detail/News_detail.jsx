@@ -6,6 +6,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getNew } from '../../../actions/new.action';
 import { useParams } from 'react-router'
 
+
+/* "install": "npm i --save --force", */
+
 const News_detail = () => {
 
     const { id } = useParams()
