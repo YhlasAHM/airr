@@ -4,7 +4,6 @@ import './Online_table.css'
 import { Tabs } from 'antd';
 import { Air_button } from '../Button/Air_button'
 
-
 import plane_left from '../../assets/images/Frame_237.png'
 import plane_right from '../../assets/images/Frame_238.png'
 

@@ -17,18 +17,16 @@ export default (state = initState, action) => {
             break;
 
         case gallery.GET_GALLERY_SUCCESS:
-            console.log('state', state.gallery_)
             state = {
                 ...state,
-                gallery_: [...state.gallery_, action.payload.gallery],
+                gallery_: action.payload.gallery_,
                 loading: false
             };
             break;
 
         case gallery.GET_GALLERY_FAILURE:
             state = {
-                ...state,
-                gallery_: action.payload.gallery,
+                ...initState,
             };
             break;
     }

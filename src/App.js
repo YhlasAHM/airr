@@ -11,15 +11,15 @@ import 'antd/dist/antd.variable.min.css';
 
 import { lazy } from 'react';
 
-import Footer from './Components/Footer/Footer';
-
-import Navbar from './Components/Header/Navbar';
-
 import './assets/css/jetly-dark.css'
 import './assets/css/jetly-responsive.css'
 import './assets/css/jetly.css'
 
 import NorthIcon from '@mui/icons-material/North';
+
+const Navbar = lazy(() => import('./Components/Header/Navbar'))
+
+const Footer = lazy(() => import('./Components/Footer/Footer'))
 
 const HomePage = lazy(() => import('./Components/Page/HomePage/Page'))
 
@@ -46,6 +46,8 @@ const Services_detail = lazy(() => import('./Components/Page/Services_detail/Ser
 const Passengers_detail = lazy(() => import('./Components/Page/Passengers_detail/Passenger_detail'))
 
 const Business_detail = lazy(() => import('./Components/Page/Business_detail/Business_detail'))
+
+const Gallery_detail = lazy(() => import('./Components/Page/Gallery_detail/Gallery_detail'))
 
 
 function App() {
@@ -83,6 +85,7 @@ function App() {
             <Route path='services/:id' element={<Services_detail />} />
             <Route path='passengers/:id' element={<Passengers_detail />} />
             <Route path='business/:id' element={<Business_detail />} />
+            <Route path='gallery/:id' element={<Gallery_detail />} />
             <Route path='gallery' element={<GalleryPage />} />
             <Route path='contact' element={<Contact />} />
             <Route path='news' element={<News />} />

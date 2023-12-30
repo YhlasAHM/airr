@@ -9,17 +9,18 @@ export const getGallery = (props) => {
         try {
 
             dispatch({ type: gallery.GET_GALLERY_REQUEST });
-            const res = await axios.get(`en/api/media/image-album/${props}/`);
+            const res = await axios.get(`en/api/media/image-album/${props}`);
+            console.log('res', res.data)
             if (res.status === 200 || res.status == 201) {
                 dispatch({
                     type: gallery.GET_GALLERY_SUCCESS,
                     payload: {
-                        gallery: res.data
+                        gallery_: res.data
                     }
                 });
             }
         } catch (error) {
-            dispatch({ type: gallery.GET_GALLERY_FAILURE, payload: { gallery: error } })
+            dispatch({ type: gallery.GET_GALLERY_FAILURE })
         }
     }
 }

@@ -32,8 +32,8 @@ const GalleryPage = () => {
                         </div>
                         <div class="row">
                             {
-                                results.map(item => (
-                                    <div key={item.data.id} class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms" onClick={() => navigate(`${item.data.id}`)}>
+                                results.map((item, index) => (
+                                    <div key={index} class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms" onClick={() => navigate(`${item.data.id}`)}>
                                         <div class="gallery-page__single">
                                             <div class="gallery-page__img">
                                                 <img src={`http://95.85.127.28:3008/${item.data.cover_image}`} alt="" />
