@@ -30,7 +30,7 @@ const News = () => {
 
     return (
         <>
-            <section class="news-page">
+            <div class="news-page">
                 <div class="container">
                     <div class="section-title text-center">
                         <h1 class="fw-bold">TAZELIKLER</h1>
@@ -57,7 +57,7 @@ const News = () => {
                         }
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

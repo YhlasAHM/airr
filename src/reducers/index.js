@@ -20,6 +20,8 @@ import partnerReducer from './partner.reducer'
 
 import galleryReducer from "./gallery.reducer";
 
+import all_galleryReducer from "./all_gallery.reducer";
+
 const RootReducer = combineReducers({
     news: newsReducer,
     new: newReducer,
@@ -31,6 +33,7 @@ const RootReducer = combineReducers({
     partners: partnersReducer,
     partner: partnerReducer,
     gallery: galleryReducer,
+    allgallery: all_galleryReducer,
 });
 
 export default RootReducer;

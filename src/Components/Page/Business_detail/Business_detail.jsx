@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import './Partners_detail.css'
+import './Business_detail.css'
 
 import img_one from '../../../assets/images/blog/lp-1-1.jpg'
 import { useDispatch, useSelector } from 'react-redux'
 import { getPartner } from '../../../actions/partner.action';
 import { useParams } from 'react-router'
 
-const Partners_detail = () => {
+const Business_detail = () => {
 
     const { id } = useParams()
 
@@ -98,4 +98,4 @@ const Partners_detail = () => {
     )
 }
 
-export default Partners_detail
+export default Business_detail

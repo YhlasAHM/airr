@@ -20,7 +20,24 @@ const Passengers = () => {
 
     const { results } = passengers
 
-    console.log('passengers:::::', results)
+
+    const handle_delete = (e) => {
+        if (e.length > 100) {
+            return e.substring(0, 100) + "..."
+        } else {
+            return e.substring(0, 100)
+        }
+    }
+
+    const handle_delete_title = (e) => {
+        if (e.length > 10) {
+            return e.substring(0, 10) + "..."
+        } else {
+            return e.substring(0, 10)
+        }
+    }
+
+    console.log('partners::: ', results)
 
     return (
         <>
@@ -40,11 +57,10 @@ const Passengers = () => {
                                             </div>
                                             <div class="services-one__content">
                                                 <div class="services-one__title-box">
-                                                    <h4 class="services-one__title"><Link to={`${item.id}`} style={{ textDecoration: 'none' }}>KARGO TERMINALY</Link>
+                                                    <h4 class="services-one__title"><Link to={`${item.id}`} style={{ textDecoration: 'none' }}>{handle_delete_title(item.title)}</Link>
                                                     </h4>
                                                 </div>
-                                                <p class="services-one__text">Asgabadyn halkara howa menzilinin caginde yerlesyan yuk terminaly su gunki
-                                                    gunde sebit boyunca gury yerde gurlan in dowrebap desgalaryn biridir. </p>
+                                                <p class="services-one__text"> </p>
                                                 <div class="services-one__arrow">
                                                     <Link to={`${item.id}`} style={{ textDecoration: 'none' }}><i class="fas fa-angle-right"></i></Link>
                                                 </div>
