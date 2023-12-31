@@ -49,7 +49,7 @@ const Page = () => {
                     <Online_table visible={name} />
                 </section>
                 <section id="counter">
-                    <Counter visible={name} />
+                    <Counter />
                 </section>
                 <section id='passenger'>
                     <Passenger visible={name} />

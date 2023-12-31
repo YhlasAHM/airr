@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Counter.css'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
