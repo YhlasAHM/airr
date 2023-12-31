@@ -1,30 +1,30 @@
-import { gallery } from "../actions/constants";
+import { flights } from "../actions/constants";
 
 const initState = {
     loading: false,
-    allgallery_: [],
+    departure_flights: [],
 };
 
 export default (state = initState, action) => {
 
     switch (action.type) {
 
-        case gallery.GET_ALL_GALLERY_REQUEST:
+        case flights.GET_DEPARTURE_FLIGHTS_REQUEST:
             state = {
                 ...state,
                 loading: true
             };
             break;
 
-        case gallery.GET_ALL_GALLERY_SUCCESS:
+        case flights.GET_DEPARTURE_FLIGHTS_SUCCESS:
             state = {
                 ...state,
-                allgallery_: action.payload.allgallery,
+                departure_flights: action.payload.departure_flights_,
                 loading: false
             };
             break;
 
-        case gallery.GET_ALL_GALLERY_FAILURE:
+        case flights.GET_DEPARTURE_FLIGHTS_FAILURE:
             state = {
                 ...initState,
             };

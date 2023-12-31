@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Online_table.css'
 
 import { Tabs } from 'antd';
@@ -12,49 +12,65 @@ import InfoIcon from '@mui/icons-material/Info';
 import plane from '../../assets/images/Group_1.png'
 
 import image from '../../assets/images/Rectangle_39.png'
+import { useDispatch, useSelector } from 'react-redux';
 
-
-const items = [
-    {
-        key: '1',
-        label: 'Вылет',
-        children: <table class="table table-striped p-2">
-            <tbody>
-                {
-                    [1, 2, 3, 4, 5, 6, 7].map(item => (
-                        <tr key={item}>
-                            <td className='p-2'>02:45 20 дек</td>
-                            <td className='p-2'>Стамбул</td>
-                            <td className='p-2'> <img src={image} alt="" /> </td>
-                            <td className='p-2'>TK 322 Turkish Airlines </td>
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </table>
-    },
-    {
-        key: '2',
-        label: 'Прилет',
-        children: <table class="table table-striped p-2">
-            <tbody>
-                {
-                    [1, 2, 3, 4, 5, 6, 7].map(item => (
-                        <tr key={item}>
-                            <td className='p-2'>09:50 20 дек</td>
-                            <td className='p-2'>Туркменистан</td>
-                            <td className='p-2'> <img src={image} alt="" /> </td>
-                            <td className='p-2'>TK 10000 Russia Airlines </td>
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </table>
-    },
-];
-
+import { getArrival_flights } from '../../actions/arrival_flights.action'
+import { getDeparture_flights } from '../../actions/departure_flights.action'
 
 const Online_table = ({ visible }) => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getArrival_flights())
+        dispatch(getDeparture_flights())
+    }, [])
+
+    const arrival_flights = useSelector(state => state.arrival_flights)
+    const departure_flights = useSelector(state => state.departure_flights)
+
+    console.log('arrival', arrival_flights)
+    console.log('departure', departure_flights)
+
+    const items = [
+        {
+            key: '1',
+            label: 'Вылет',
+            children: <table class="table table-striped p-2">
+                <tbody>
+                    {
+                        [1, 2, 3, 4, 5, 6, 7].map(item => (
+                            <tr key={item}>
+                                <td className='p-2'>02:45 20 дек</td>
+                                <td className='p-2'>Стамбул</td>
+                                <td className='p-2'> <img src={image} alt="" /> </td>
+                                <td className='p-2'>TK 322 Turkish Airlines </td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
+        },
+        {
+            key: '2',
+            label: 'Прилет',
+            children: <table class="table table-striped p-2">
+                <tbody>
+                    {
+                        [1, 2, 3, 4, 5, 6, 7].map(item => (
+                            <tr key={item}>
+                                <td className='p-2'>09:50 20 дек</td>
+                                <td className='p-2'>Туркменистан</td>
+                                <td className='p-2'> <img src={image} alt="" /> </td>
+                                <td className='p-2'>TK 10000 Russia Airlines </td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
+        },
+    ];
+
 
     return (
         <>

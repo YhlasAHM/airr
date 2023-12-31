@@ -22,6 +22,9 @@ import galleryReducer from "./gallery.reducer";
 
 import all_galleryReducer from "./all_gallery.reducer";
 
+import arrival_flightsReducer from './arrival_flights.reducer'
+import departure_flightsReducer from './departure_flights.reducer'
+
 const RootReducer = combineReducers({
     news: newsReducer,
     new: newReducer,
@@ -34,6 +37,8 @@ const RootReducer = combineReducers({
     partner: partnerReducer,
     gallery: galleryReducer,
     allgallery: all_galleryReducer,
+    arrival_flights: arrival_flightsReducer,
+    departure_flights: departure_flightsReducer,
 });
 
 export default RootReducer;
