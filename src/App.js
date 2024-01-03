@@ -79,6 +79,11 @@ function App() {
   return (
     <>
       <div className='App'>
+        <div>
+          {
+            top && <div className='back_top' onClick={back_Top}><NorthIcon /> </div>
+          }
+        </div>
         <Navbar />
         <div>
           <Routes>
@@ -100,9 +105,6 @@ function App() {
           </Routes>
         </div>
         <Footer />
-        {
-          top && <div className='back_top' onClick={back_Top}><NorthIcon /> </div>
-        }
       </div>
     </>
   );

@@ -13,47 +13,9 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 import EmailIcon from '@mui/icons-material/Email';
 
-import { DownOutlined, SmileOutlined } from '@ant-design/icons';
-import { Dropdown, Space } from 'antd';
-
 import { Link } from 'react-router-dom'
 
-
-const items = [
-    {
-        key: '1',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-                1st menu item
-            </a>
-        ),
-    },
-    {
-        key: '2',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                2nd menu item (disabled)
-            </a>
-        ),
-        icon: <SmileOutlined />,
-        disabled: true,
-    },
-    {
-        key: '3',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-                3rd menu item (disabled)
-            </a>
-        ),
-        disabled: true,
-    },
-    {
-        key: '4',
-        danger: true,
-        label: 'a danger item',
-    },
-];
-
+import Language_dropdown from './Header_language_dropdown';
 
 const Header_main = () => {
 
@@ -129,18 +91,7 @@ const Header_main = () => {
                             </div>
                             <div className="main-header-three__social mt-2">
                                 <a href="#" className='text-white'>Sorag-jogap gullugy</a>
-                                <a href="#">  <Dropdown
-                                    menu={{
-                                        items,
-                                    }}
-                                >
-                                    <a className='text-white' onClick={(e) => e.preventDefault()}>
-                                        <Space>
-                                            Turkmen
-                                            <DownOutlined />
-                                        </Space>
-                                    </a>
-                                </Dropdown> </a>
+                                <a href="#"> <Language_dropdown /> </a>
                             </div>
                         </div>
                     </div>
