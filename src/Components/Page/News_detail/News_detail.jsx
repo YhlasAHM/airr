@@ -100,7 +100,7 @@ const News_detail = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> : null
+                    </div> : <div>Loading !!!</div>
             }
         </>
     )

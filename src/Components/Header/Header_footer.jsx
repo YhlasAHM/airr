@@ -3,7 +3,11 @@ import './Header.css'
 
 import { Link, useLocation } from 'react-router-dom'
 
+import { useTranslation } from "react-i18next";
+
 const Header_footer = () => {
+
+    const { t } = useTranslation()
 
     const [visible_tab, setVisibleTab] = useState('home')
 
@@ -50,39 +54,39 @@ const Header_footer = () => {
                             <div className='header_footer_left'>
                                 <ul>
                                     <li>
-                                        <Link to={'/'}>Bas sahypa</Link>
+                                        <Link to={'/'}>{t('home_page')}</Link>
                                         <div className={visible_tab == 'home' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/about'}>Biz barada</Link>
+                                        <Link to={'/about'}>{t('about_us')}</Link>
                                         <div className={visible_tab == 'air_about' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/online_table'}>Onlayn tablo</Link>
+                                        <Link to={'/online_table'}>{t('online_table')}</Link>
                                         <div className={visible_tab == 'online_table' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/passengers'}>Yolagcylar</Link>
+                                        <Link to={'/passengers'}>{t('passengers')}</Link>
                                         <div className={visible_tab == 'passengers' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/business'}>Isewurler</Link>
+                                        <Link to={'/business'}>{t('business')}</Link>
                                         <div className={visible_tab == 'business' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/services'}>Hyzmatlarymyz</Link>
+                                        <Link to={'/services'}>{t('services')}</Link>
                                         <div className={visible_tab == 'services' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/news'}>Tazelikler</Link>
+                                        <Link to={'/news'}>{t('news')}</Link>
                                         <div className={visible_tab == 'news' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/gallery'}>Galereya</Link>
+                                        <Link to={'/gallery'}>{t('gallery')}</Link>
                                         <div className={visible_tab == 'gallery' ? 'bottom_' : null}></div>
                                     </li>
                                     <li>
-                                        <Link to={'/contact'}>Habarlasmak</Link>
+                                        <Link to={'/contact'}>{t('contact')}</Link>
                                         <div className={visible_tab == 'contact' ? 'bottom_' : null}></div>
                                     </li>
                                 </ul>

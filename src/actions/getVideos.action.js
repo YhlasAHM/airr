@@ -10,7 +10,6 @@ export const getVideo = (props) => {
 
             dispatch({ type: gallery.GET_VIDEO_REQUEST });
             const res = await axios.get(`en/api/media/videos/${props}`);
-            console.log('res', res.data)
             if (res.status === 200 || res.status == 201) {
                 dispatch({
                     type: gallery.GET_VIDEO_SUCCESS,

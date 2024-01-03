@@ -10,7 +10,6 @@ export const getArrival_flights = () => {
 
             dispatch({ type: flights.GET_ARRIVAL_FLIGHTS_REQUEST });
             const res = await axios.get(`en/api/arrival-flights/`);
-            console.log('ressssss', res)
             if (res.status === 200 || res.status == 201) {
                 dispatch({
                     type: flights.GET_ARRIVAL_FLIGHTS_SUCCESS,

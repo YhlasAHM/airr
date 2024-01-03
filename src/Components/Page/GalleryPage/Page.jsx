@@ -20,7 +20,6 @@ const GalleryPage = () => {
 
     const { results } = allgallery_
 
-    console.log('gallery:::::', results)
 
     return (
         <>
@@ -43,11 +42,8 @@ const GalleryPage = () => {
                                 ))
                             }
                         </div>
-                        {/* <div className='text-center'>
-                            <button type='button' onClick={() => setPage(page + 1)}> Yenede </button>
-                        </div> */}
                     </div>
-                </div> : null
+                </div> : <div>Loading !!!</div>
             }
         </>
     )

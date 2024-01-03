@@ -39,8 +39,6 @@ const Business = ({ visible }) => {
         }
     }
 
-    console.log('partners::: ', results)
-
     return (
         <>
             {

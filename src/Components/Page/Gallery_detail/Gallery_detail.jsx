@@ -16,23 +16,20 @@ const Gallery_detail = () => {
         dispatch(getVideo(id))
     }, [])
 
-    const gallery = useSelector(state => state.gallery?.gallery_?.data?.images)
+    const gallery = useSelector(state => state.gallery)
 
     const video = useSelector(state => state.video.video_?.data?.videos)
 
-    console.log('videoo:::::::::', video)
-
-    console.log(gallery)
-
+    const { gallery_single } = gallery
 
     return (
         <>
             {
-                gallery ? <div class="gallery-page">
+                gallery_single ? <div class="gallery-page">
                     <div class="container">
                         <div class="row">
                             {
-                                gallery.map(item => (
+                                gallery_single.map(item => (
                                     <div key={item.id} class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                         <div class="gallery-page__single">
                                             <div class="gallery-page__img">
@@ -47,7 +44,7 @@ const Gallery_detail = () => {
                 </div> : <div>Loading !!!</div>
             }
             <div className='container'>
-                {
+                {video ?
                     video.map(item => (
                         <div key={item.id} class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="gallery-page__single">
@@ -58,7 +55,7 @@ const Gallery_detail = () => {
                                 </div>
                             </div>
                         </div>
-                    ))
+                    )) : <div>Loading !!!</div>
                 }
             </div>
         </>

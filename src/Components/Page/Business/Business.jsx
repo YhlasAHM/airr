@@ -37,9 +37,6 @@ const Business = () => {
         }
     }
 
-    console.log('partners::: ', results)
-
-
     return (
         <>
             {
@@ -73,7 +70,7 @@ const Business = () => {
                                 }
                             </div>
                         </div>
-                    </div> : null
+                    </div> : <div>Loading !!!</div>
             }
         </>
     )

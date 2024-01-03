@@ -37,7 +37,6 @@ const Passengers = () => {
         }
     }
 
-    console.log('partners::: ', results)
 
     return (
         <>

@@ -46,9 +46,6 @@ const config = axios.create({
     baseURL: `http://95.85.127.28:3008/`,
     headers: {
         'Content-Type': 'application/json',
-        /* 'Authorization': `Bearer ${localStorage.getItem("userinfo")
-            ? JSON.parse(localStorage.getItem("userinfo")).access
-            : null}` */
     }
 })
 

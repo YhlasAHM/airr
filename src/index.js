@@ -23,8 +23,8 @@ import HttpApi from 'i18next-http-backend';
 
 i18n.use(initReactI18next).use(LanguageDetector).use(HttpApi).init({
   supportedLngs: ['en', 'tk', 'ru'],
-  //lng: 'en',
-  fallbackLng: "en",
+  lng: 'tk',
+  fallbackLng: "tk",
   detection: {
     order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain', 'sessionStorage'],
     caches: ['cookie'],

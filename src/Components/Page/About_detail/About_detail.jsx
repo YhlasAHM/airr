@@ -2,7 +2,6 @@ import React from 'react'
 
 import img_one from '../../../assets/images/about_img1.png'
 import img_two from '../../../assets/images/about_img2.png'
-import img_three from '../../../assets/images/about_img3.jpg'
 import About_card from '../../About_card/About_card'
 import { useParams } from 'react-router'
 import Content from '../../Content/Content'

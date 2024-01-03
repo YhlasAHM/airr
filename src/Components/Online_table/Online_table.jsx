@@ -29,9 +29,6 @@ const Online_table = ({ visible }) => {
     const arrival_flights = useSelector(state => state.arrival_flights)
     const departure_flights = useSelector(state => state.departure_flights)
 
-    console.log('arrival', arrival_flights)
-    console.log('departure', departure_flights)
-
     const items = [
         {
             key: '1',

@@ -5,9 +5,6 @@ import plane_left from '../../assets/images/Frame_237.png'
 import plane_right from '../../assets/images/Frame_238.png'
 
 
-import img from '../../assets/images/brand/brand-1-1.png'
-
-
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -92,8 +89,8 @@ const Partners = ({ visible }) => {
                                 {
                                     results.map(item => (
                                         <div class="item" key={item.id}>
-                                            <div class="">
-                                                <img src={`http://95.85.127.28:3008/${item.logo}`} alt="" style={{ height: '10rem' }} />
+                                            <div class="img-fluid">
+                                                <img src={`http://95.85.127.28:3008/${item.logo}`} className='img-fluid' alt="" style={{ height: '8rem' }} />
                                             </div>
                                         </div>
                                     ))
@@ -101,7 +98,7 @@ const Partners = ({ visible }) => {
                             </OwlCarousel>
                         </div>
                     </div>
-                </div> : null
+                </div> : <div>Loading !!!</div>
             }
         </>
     )

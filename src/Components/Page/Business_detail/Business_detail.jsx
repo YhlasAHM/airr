@@ -92,7 +92,7 @@ const Business_detail = () => {
                             </div>
                         </div>
                     </div>
-                </div > : null
+                </div > : <div>Loading !!!</div>
             }
         </>
     )

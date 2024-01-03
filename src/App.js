@@ -82,7 +82,7 @@ function App() {
         <Navbar />
         <div>
           <Routes>
-            <Route path='/' element={<HomePage />} />
+            <Route index element={<HomePage />} />
             <Route path='news/:id' element={<News_detail />} />
             <Route path='services/:id' element={<Services_detail />} />
             <Route path='passengers/:id' element={<Passengers_detail />} />

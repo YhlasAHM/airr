@@ -2,7 +2,7 @@ import { gallery } from "../actions/constants";
 
 const initState = {
     loading: false,
-    gallery_: [],
+    gallery_single: [],
 };
 
 export default (state = initState, action) => {
@@ -19,7 +19,7 @@ export default (state = initState, action) => {
         case gallery.GET_GALLERY_SUCCESS:
             state = {
                 ...state,
-                gallery_: action.payload.gallery_,
+                gallery_single: action.payload.gallery_,
                 loading: false
             };
             break;

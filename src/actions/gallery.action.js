@@ -10,12 +10,11 @@ export const getGallery = (props) => {
 
             dispatch({ type: gallery.GET_GALLERY_REQUEST });
             const res = await axios.get(`en/api/media/image-album/${props}`);
-            console.log('res', res.data)
             if (res.status === 200 || res.status == 201) {
                 dispatch({
                     type: gallery.GET_GALLERY_SUCCESS,
                     payload: {
-                        gallery_: res.data
+                        gallery_: res.data.data.images
                     }
                 });
             }
