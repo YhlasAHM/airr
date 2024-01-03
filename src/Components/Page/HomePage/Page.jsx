@@ -11,6 +11,7 @@ import Services from '../../Services/Services'
 import News from '../../News/News'
 import Video from '../../Video/Video'
 import Partners from '../../Partners/Partners'
+import Plane_slider from '../../Header/Plane_slider'
 
 const Page = () => {
 
@@ -42,6 +43,9 @@ const Page = () => {
     return (
         <>
             <div className='Page'>
+                <div>
+                    <Plane_slider />
+                </div>
                 <section id="air_about">
                     <Airport_about />
                 </section>

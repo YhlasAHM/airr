@@ -108,7 +108,7 @@
     text-decoration: none;
 }
 
-.Navbar_wrapper .slider_overlay {
+.slider_overlay {
     position: absolute;
     display: flex;
     justify-content: center;
