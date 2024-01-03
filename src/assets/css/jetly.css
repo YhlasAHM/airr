@@ -4823,7 +4823,7 @@ ul {
   display: block;
   padding: 160px 0 120px;
   z-index: 1;
-  background-color: var(--jetly-black);
+  background-color: #009000;
   /*   background-image: url(../images/backgrounds/video-one-bg-1.jpg); */
   background-size: cover;
 }
@@ -4881,7 +4881,7 @@ ul {
   line-height: 90px;
   text-align: center;
   font-size: 20px;
-  color: var(--jetly-black);
+  color: #009000;
   background-color: var(--jetly-white);
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -4891,7 +4891,7 @@ ul {
 }
 
 .video-one__video-icon:hover {
-  background-color: var(--jetly-black);
+  background-color: #009000;
   color: var(--jetly-white);
 }
 
@@ -4976,7 +4976,7 @@ ul {
 
 .video-one__btn-one .thm-btn {
   color: var(--jetly-white);
-  background-color: var(--jetly-base);
+  background-color: #009000;
 }
 
 .video-one__btn-one .thm-btn::before {
@@ -4984,11 +4984,11 @@ ul {
 }
 
 .video-one__btn-one .thm-btn:hover {
-  color: var(--jetly-black);
+  color: #009000;
 }
 
 .video-one__btn-two .thm-btn {
-  color: var(--jetly-black);
+  color: #009000;
   background-color: var(--jetly-white);
 }
 

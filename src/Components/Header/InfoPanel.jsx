@@ -8,43 +8,34 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 import EmailIcon from '@mui/icons-material/Email';
 
-const items = [
-    {
-        key: '1',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-                1st menu item
-            </a>
-        ),
-    },
-    {
-        key: '2',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                2nd menu item (disabled)
-            </a>
-        ),
-        icon: <SmileOutlined />,
-        disabled: true,
-    },
-    {
-        key: '3',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-                3rd menu item (disabled)
-            </a>
-        ),
-        disabled: true,
-    },
-    {
-        key: '4',
-        danger: true,
-        label: 'a danger item',
-    },
-];
-
+import { useTranslation } from 'react-i18next'
+import i18next from "i18next";
 
 const InfoPanel = () => {
+    const { t, i18n } = useTranslation()
+
+    const items = [
+        {
+            label: <a onClick={() => {
+                i18n.changeLanguage('ru')
+            }} className={`${i18next.language === 'ru' ? 'fw-bold' : ' '}`}>Russian</a>,
+            key: '1',
+        },
+        {
+            label: <a onClick={() => {
+                i18n.changeLanguage('tk')
+            }} className={`${i18next.language === 'tk' ? 'fw-bold' : ' '}`}>Turkmen</a>,
+            key: '2',
+        },
+        {
+            label: <a onClick={() => {
+                i18n.changeLanguage('en')
+            }} className={`${i18next.language === 'en' ? 'fw-bold' : ' '}`}>English</a>,
+            key: '3',
+        },
+    ];
+
+
     return (
         <>
             <div className="Info_panel  pt-2 pb-2 text-white">
@@ -78,7 +69,7 @@ const InfoPanel = () => {
                                 >
                                     <a className='text-white' onClick={(e) => e.preventDefault()}>
                                         <Space>
-                                            Turkmen
+                                            {i18next.language === 'tk' ? 'Turkmen' : i18next.language === 'ru' ? 'Russian' : i18next.language === 'en' ? 'English' : 'Turkmen'}
                                             <DownOutlined />
                                         </Space>
                                     </a>

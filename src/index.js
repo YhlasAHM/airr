@@ -12,6 +12,32 @@ import logo from './assets/images/AHHM-Preloader.gif'
 
 import store from './store';
 import { Provider } from 'react-redux';
+import i18n from 'i18next';
+
+
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+
+
+
+i18n.use(initReactI18next).use(LanguageDetector).use(HttpApi).init({
+  supportedLngs: ['en', 'tk', 'ru'],
+  //lng: 'en',
+  fallbackLng: "en",
+  detection: {
+    order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain', 'sessionStorage'],
+    caches: ['cookie'],
+  },
+  ns: ["default"],
+  defaultNS: "default",
+  backend: {
+    loadPath: '/locales/{{lng}}/translation.json',
+  },
+  react: { useSuspense: false },
+  debug: true,
+});
+
 
 
 const Loading = () => {
