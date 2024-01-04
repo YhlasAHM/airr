@@ -2,7 +2,7 @@
     "key": "hello turkmens",
     "language": "tk",
     "home_page": "Baş sahypa",
-    "passengers": "Ýolagçylar",
+    "passengers": "Ýolagçylar üçin",
     "online_table": "Onlaýn tablo",
     "business": "Işewürler",
     "services": "Hyzmatlarymyz",
@@ -10,5 +10,14 @@
     "gallery": "Galereýa",
     "contact": "Habarlaşmak",
     "about_us": "Biz barada",
-    "Ashgabat International Airport": "AŞGABAT HALKARA HOWA MENZILI"
+    "partners": "Hyzmatdaşlarymyz",
+    "Ashgabat_International_Airport": "AŞGABAT HALKARA HOWA MENZILI",
+    "second_section_about": "Bu hazirki zaman terminallary , birnace dilleri bilyan isgarler we yolagcylaryn rahatlylygy. Ol yurdun esasy howa menzili bolup , dunyanin in uly awiakompaniyalaryny ozunde birlesdiryan turkmen howa menzilidir. Ol Ginnesin rekordlar kitabyna girizildi we birnace halkara bayraklara mynasyp boldy.",
+    "seven_section_services": "AŞGABAT HOWA MENZILINIŇ HYZMATLARY",
+    "seven_section_text": "Howa menziliniň ulanyjylary uçin köp hyzmatlar bar: Dükanlar we kafeler, Çagalar oýun meýdançasy, CIP zal, myhmanhanalar, Awtoulag duralgasy, goşlary saklamak, lukmançylyk kömegi",
+    "about_pg_card_one": "Howa menziliniň taryhy",
+    "about_pg_card_two": "Administration and Airport Services",
+    "about_pg_card_one_text": "Türkmenistanyň howa flotunyň ösüşiniň taryhy",
+    "about_pg_card_two_text": "Halkara howa menzili bilen habarlaşmak üçin maglumatlar we hyzmatlar",
+    "about_pg_card_three_text": "Howa menziliniň ýerine ýetirýän işleri we şuňa meňzeş wakalar barada"
 }

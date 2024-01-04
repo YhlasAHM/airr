@@ -13,6 +13,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { useDispatch, useSelector } from 'react-redux'
 
 import { getPartner_home } from '../../actions/partner_home.action'
+import { Translate } from '../Translate/Translate';
 
 const Partners = ({ visible }) => {
 
@@ -76,7 +77,7 @@ const Partners = ({ visible }) => {
                                         <img src={plane_left} alt="" className='me-2' />
                                     </div>
                                 </div>
-                                HYZMATDASLARYMYZ
+                                <Translate title='partners' />
                                 <div className="col" style={{ position: 'relative' }}>
                                     <div className={`fly_two ${visible == 'partners' ? 'active_img_two' : null}`}>
                                         <img src={plane_right} alt="" className='ms-2' />

@@ -15,6 +15,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getServices } from '../../actions/services.action';
 
 import { Link } from 'react-router-dom'
+import { Translate } from '../Translate/Translate';
 
 const Services = () => {
 
@@ -74,11 +75,9 @@ const Services = () => {
                             <div class="col-xl-4">
                                 <div class="price-one__left">
                                     <div class="section-title text-left">
-                                        <h3 class="fw-bold">ASGABAT HOWA MENZILININ <br /> HYZMATLARY <img src={plane} alt="" /></h3>
+                                        <h3 class="fw-bold"> <Translate title='seven_section_services' /> <br /> <img src={plane} alt="" /></h3>
                                     </div>
-                                    <p class="price-one__text">Howa menzilinin ulanyjylary ucin kop hyzmatlar bar:
-                                        Dukanlar we kafeler, Cagalar oyun meydancasy, CIP zal, myhmanhanalar, Awtoulag
-                                        duralgasy, goslary saklamak, lukmancylyk komegi  </p>
+                                    <p class="price-one__text"> <Translate title='seven_section_text' />  </p>
                                 </div>
                             </div>
                             <div class="col-xl-8">

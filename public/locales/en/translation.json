@@ -1,5 +1,23 @@
 {
     "key": "hello english",
     "language": "en",
-    "discounted_products": "Discounted products"
+    "home_page": "Home",
+    "passengers": "Passengers",
+    "online_table": "Online table",
+    "business": "Business",
+    "services": "Services",
+    "news": "News",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "about_us": "About",
+    "partners": "Partners",
+    "Ashgabat_International_Airport": "ASHGABAT INTERNATIONAL AIRPORT",
+    "second_section_about": "These are modern terminals, just a few languages ​​and billions of people and passenger comfort. It is the main airport of the country and the largest in the world It is a Turkmen airport that integrates airlines. It is a Guinness World Record was included in the book and won several international flags.",
+    "seven_section_services": "ASGABAT AIRPORT SERVICES",
+    "seven_section_text": "There are many services for airport users: Shops and cafes, Children's playground, CIP lounge, hotels, Parking, baggage storage, medical assistance.",
+    "about_pg_card_one": "History of the airport",
+    "about_pg_card_two": "Administration and Airport Services",
+    "about_pg_card_one_text": "History of the Air Force of Turkmenistan",
+    "about_pg_card_two_text": "International airport contact information and services",
+    "about_pg_card_three_text": "About airport operations and similar events"
 }

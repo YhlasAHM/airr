@@ -6,6 +6,8 @@ import logo from '../../assets/images/logo_one.png'
 
 import logo_onee from '../../assets/images/Frame_7101.png'
 
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
 
     return (
@@ -23,7 +25,7 @@ const Footer = () => {
                                         <div class="footer-widget__column footer-widget__about">
                                             <div class="footer-widget__logo">
                                                 <div className='text-white'>
-                                                    <a href="#"><img src={logo_onee} alt="" /></a>
+                                                    <Link to={'/'}><img src={logo_onee} alt="" /></Link>
                                                 </div>
                                             </div>
                                             <div class="footer-widget__about-text-box">
@@ -38,11 +40,11 @@ const Footer = () => {
                                                 <h3 class="footer-widget__title">YOLAGCYLAR UCIN</h3>
                                             </div>
                                             <ul class="footer-widget__Explore-list list-unstyled">
-                                                <li><a href="about.html">Onlayn tablo</a></li>
-                                                <li><a href="jet-rentals.html">Gatnawlaryn rejesi</a></li>
-                                                <li><a href="destinations.html">Goslary gecirmegin duzgunleri</a></li>
-                                                <li><a href="contact.html">Business Lounge</a></li>
-                                                <li><a href="contact.html">Ucusyn on yanyndaky barlag</a></li>
+                                                <li><Link to={'/online_table'}>Onlayn tablo</Link></li>
+                                                <li><a >Gatnawlaryn rejesi</a></li>
+                                                <li><a >Goslary gecirmegin duzgunleri</a></li>
+                                                <li><Link to={'/contact'}>Business Lounge</Link></li>
+                                                <li><Link to={'/contact'}>Ucusyn on yanyndaky barlag</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -52,11 +54,11 @@ const Footer = () => {
                                                 <h3 class="footer-widget__title">HYZMATDASLAR UCIN</h3>
                                             </div>
                                             <ul class="footer-widget__Explore-list list-unstyled">
-                                                <li><a href="about.html">Hyzmat edis nyrhnamalary</a></li>
-                                                <li><a href="contact.html">Kargo terminaly</a></li>
-                                                <li><a href="news.html">Awiakompaniyalar ucin</a></li>
-                                                <li><a href="about.html">Yorite tehniki gullugy</a></li>
-                                                <li><a href="faq.html">UGAHE gullugy</a></li>
+                                                <li><Link to={'/about'}>Hyzmat edis nyrhnamalary</Link></li>
+                                                <li><Link to={'/contact'}>Kargo terminaly</Link></li>
+                                                <li><Link to={'/news'}>Awiakompaniyalar ucin</Link></li>
+                                                <li><Link to={'/about'}>Yorite tehniki gullugy</Link></li>
+                                                <li><Link to={'/about'}>UGAHE gullugy</Link></li>
                                             </ul>
                                         </div>
                                     </div>

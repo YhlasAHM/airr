@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getPassengers } from '../../actions/passengers.action'
 
 import { Link } from 'react-router-dom'
+import { Translate } from '../Translate/Translate'
 
 
 const Passenger = ({ visible }) => {
@@ -46,7 +47,7 @@ const Passenger = ({ visible }) => {
                                         <img src={plane_left} alt="" className='me-2' />
                                     </div>
                                 </div>
-                                YOLAGCYLAR UCIN
+                                <Translate title='passengers' />
                                 <div className="col" style={{ position: 'relative' }}>
                                     <div className={`fly_two ${visible == 'passenger' ? 'active_img_two' : null}`}>
                                         <img src={plane_right} alt="" className='ms-2' />

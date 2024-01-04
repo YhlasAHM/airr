@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getPartners } from '../../actions/partners.action'
 
 import { Link } from 'react-router-dom'
+import { Translate } from '../Translate/Translate'
 
 const Business = ({ visible }) => {
 
@@ -53,7 +54,7 @@ const Business = ({ visible }) => {
                                                 <img src={plane_left} alt="" className='me-2' />
                                             </div>
                                         </div>
-                                        ISEWURLER
+                                        <Translate title='business' />
                                         <div className="col" style={{ position: 'relative' }}>
                                             <div className={`fly_two ${visible == 'business' ? 'active_img_two' : null}`}>
                                                 <img src={plane_right} alt="" className='ms-2' />

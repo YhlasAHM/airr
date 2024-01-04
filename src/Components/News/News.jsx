@@ -15,6 +15,7 @@ import { getNews } from '../../actions/news.action';
 import { Link } from 'react-router-dom'
 
 import { useNavigate } from 'react-router';
+import { Translate } from '../Translate/Translate'
 
 const News = ({ visible }) => {
 
@@ -48,7 +49,7 @@ const News = ({ visible }) => {
                                         <img src={plane_left} alt="" className='me-2' />
                                     </div>
                                 </div>
-                                TAZELIKLER
+                                <Translate title='news' />
                                 <div className="col" style={{ position: 'relative' }}>
                                     <div className={`fly_two ${visible == 'news' ? 'active_img_two' : null}`}>
                                         <img src={plane_right} alt="" className='ms-2' />

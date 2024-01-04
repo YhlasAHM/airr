@@ -16,6 +16,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { getArrival_flights } from '../../actions/arrival_flights.action'
 import { getDeparture_flights } from '../../actions/departure_flights.action'
+import { Translate } from '../Translate/Translate';
 
 const Online_table = ({ visible }) => {
 
@@ -79,7 +80,7 @@ const Online_table = ({ visible }) => {
                                 <img src={plane_left} alt="" className='me-2' />
                             </div>
                         </div>
-                        ONLAYN TABLO
+                        <Translate title='online_table' />
                         <div className="col" style={{ position: 'relative' }}>
                             <div className={`fly_two ${visible == 'online_table' ? 'active_img_two' : null}`}>
                                 <img src={plane_right} alt="" className='ms-2' />

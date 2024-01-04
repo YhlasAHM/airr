@@ -3,7 +3,10 @@ import './Air_button.css'
 
 import { useNavigate } from 'react-router';
 
+import { Translate } from '../Translate/Translate';
+
 export const Air_button = ({ title, img, background_btn, color_btn, navigate_ }) => {
+
     const navigate = useNavigate()
     return (
         <button onClick={() => navigate(`${navigate_}`)} type='button' className='d-flex text-center' style={{ background: `${background_btn}`, color: `${color_btn}` }}>
@@ -11,7 +14,7 @@ export const Air_button = ({ title, img, background_btn, color_btn, navigate_ })
                 <img src={img} alt="" />
             </div>
             <div>
-                {title}
+                <Translate title={title} />
             </div>
         </button>
     )
