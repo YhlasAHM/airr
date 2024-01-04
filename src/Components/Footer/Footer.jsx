@@ -52,21 +52,21 @@ const Footer = () => {
                                     <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                         <div class="footer-widget__column footer-widget__links">
                                             <div class="footer-widget__title-box">
-                                                <h3 class="footer-widget__title">HYZMATDASLAR UCIN</h3>
+                                                <h3 class="footer-widget__title"><Translate title='footer_pg_services' /></h3>
                                             </div>
                                             <ul class="footer-widget__Explore-list list-unstyled">
-                                                <li><Link to={'/about'}>Hyzmat edis nyrhnamalary</Link></li>
-                                                <li><Link to={'/contact'}>Kargo terminaly</Link></li>
-                                                <li><Link to={'/news'}>Awiakompaniyalar ucin</Link></li>
-                                                <li><Link to={'/about'}>Yorite tehniki gullugy</Link></li>
-                                                <li><Link to={'/about'}>UGAHE gullugy</Link></li>
+                                                <li><Link to={'/about'}><Translate title='footer_pg_services_one' /></Link></li>
+                                                <li><Link to={'/contact'}><Translate title='footer_pg_services_two' /></Link></li>
+                                                <li><Link to={'/news'}><Translate title='footer_pg_services_three' /></Link></li>
+                                                <li><Link to={'/about'}><Translate title='footer_pg_services_four' /></Link></li>
+                                                <li><Link to={'/about'}><Translate title='footer_pg_services_five' /></Link></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                         <div class="footer-widget__column footer-widget__Contact">
                                             <div class="footer-widget__title-box">
-                                                <h3 class="footer-widget__title">HABARLASMAK UCIN</h3>
+                                                <h3 class="footer-widget__title"><Translate title='footer_pg_contact' /></h3>
                                             </div>
                                             <ul class="footer-widget__Contact-list list-unstyled">
                                                 <li>
@@ -101,7 +101,7 @@ const Footer = () => {
                             <div class="site-footer__bottom">
                                 <div class="site-footer__bottom-inner">
                                     <div class="site-footer__bottom-left">
-                                        <p class="site-footer__bottom-text text-white">© 2024 Halkara Howa Menzili. Ahli hukuk goragly.</p>
+                                        <p class="site-footer__bottom-text text-white"><Translate title='footer_pg_bottom' /></p>
                                     </div>
                                 </div>
                             </div>
