@@ -16,8 +16,20 @@
     "seven_section_services": "AŞGABAT HOWA MENZILINIŇ HYZMATLARY",
     "seven_section_text": "Howa menziliniň ulanyjylary uçin köp hyzmatlar bar: Dükanlar we kafeler, Çagalar oýun meýdançasy, CIP zal, myhmanhanalar, Awtoulag duralgasy, goşlary saklamak, lukmançylyk kömegi",
     "about_pg_card_one": "Howa menziliniň taryhy",
-    "about_pg_card_two": "Administration and Airport Services",
+    "about_pg_card_two": "Adminstratsiýa we Howa Menziliň Gulluklary",
     "about_pg_card_one_text": "Türkmenistanyň howa flotunyň ösüşiniň taryhy",
     "about_pg_card_two_text": "Halkara howa menzili bilen habarlaşmak üçin maglumatlar we hyzmatlar",
-    "about_pg_card_three_text": "Howa menziliniň ýerine ýetirýän işleri we şuňa meňzeş wakalar barada"
+    "about_pg_card_three_text": "Howa menziliniň ýerine ýetirýän işleri we şuňa meňzeş wakalar barada",
+    "about_pg_detail_text": "Türkmenistanyň raýat awiasiýasynyň taryhy",
+    "about_pg_detail_text_one": "Türkmenistanyň raýat awiasiýasynyň taryhy öz gözbaşyny 1927-nji ýyldan alyp gaýdýar, şol wagt Çärjewi Dörtgüliň we Täze Ürgenjiň üsti bilen Daşhowuza birleşdirilen ilkinji howa gatnawy açyldy. Bu howa ýolunda Çärjew awiakärhanasy Germaniýadan satyn alnan “Ýunkers” ÝU-13 dört orunlyk ýolagçy uçarlaryny we Sowet soýuzynda öndürilen K-4 uçarlaryny ulanypdyr. Jemi 8 uçar hereket edipdir.",
+    "about_pg_detail_text_two": "Ilkinji howa menzili",
+    "about_pg_detail_text_three": "1932-nji ýylda Türkmenistanyň raýat howa flotunyň üsti täze sowet ýolagçy uçarlary bilen ýetirilýär. Olar alty orunlyk K-5 we on iki orunlyk ANT9 uçarlardy. Olaryň binýadynda 1932-nji ýylda Çärjew howa menziliniň awiabölümçesi döredilýär, ol aralyk aerodromsyz, gönüden-göni Çärjew – Daşhowuz awiaýoluna hyzmat edip başlaýar. Aşgabat şäherinde ilkinji howa menzili 1932-nji ýylda gurulýar we 1934-nji ýylyň ahyrynda onda iki awiabölümçe açylýar: olaryň biri Po-2 uçarlary (oba hojalygynda ulanmak üçin) toplumlaşdyrylýar, beýlekisi bolsa, TB-3 (ýükleri daşamak) uçarlardan ybarat bolýar.",
+    "about_pg_detail_text_four": "1944-nji ýylda Türkmenistanyň awiaparkynyň üsti ilkinji Li-2 uçarlary bilen ýetirilýär, olarda Bakunyň, Astrahanyň we Wolgogradyň üsti bilen Aşgabatdan Moskwa ýolagçylary we poçtalary gatnadypdyrlar. 1946-njy ýyldan SSSR-iň we Türkmenistanyň (şol wagt SSSR-iň düzümine girýän respublika hökmünde) howa ýollarynda täze Il-12, Il-14, An-2, Ýak-12 sowet uçarlary ulanylyp başlaýar. 1956-njy ýylyň sentýabrynda ilkinji yzygiderli gatnawlary reaktiw raýat awiasiýasynyň ilkinjisi – Tu-114, Il-18, An-24 uçarlary peýda bolýar. Kuwwaty uçarlar Türkmenistany howa ýollary bilen SSSR-iň iri administratiw we medeni merkezleri, soýuz respublikalarynyň paýtagtlary, şypahana we beýleki şäherler bilen baglaşdyrmaga mümkinçilik berdi. 50-nji ýyllaryň başlaryndan respublikanyň halk hojalygynda dikuçarlar giňden peýdalanyp başlanýar. Awiasiýa oba hojalygynda baglar we üzümçilikler işlenende, gowaçalaryň defolýasiýasynda ulanylýar. 60-njy ýyllaryň ahyrynda Türkmenistanyň raýat awiasiýasy ýolagçylary uzak aralyklara gatnamakda möhüm ähmiýete eýe bolýär, uçar parkynyň ýolagçy sygymlylygynyň we ýük göterijiliginiň artanlygy sebäpli, awiaulagyň täjirçilik tizligi üzül-kesil ýokarlanýar. Ulagyň köpçülekleýin görnüşi bolmak bilen, raýat howa floty daşamalaryň ýokary ösüş depginini üpjün edýär.",
+    "about_pg_detail_button": "Administrasiýa",
+    "about_pg_detail_button_one": "Howa Menziliniň Gulluklary",
+    "footer_pg_text_one": "Häzirki zaman terminallary, birnäçe dilleri bilýän işgärler we ýolagçylaryň rahatlygy.",
+    "footer_pg_text_two": "Gatnawlaryň rejesi",
+    "footer_pg_text_three": "Goşlary geçirmegiň düzgünleri",
+    "footer_pg_text_four": "Business Lounge",
+    "footer_pg_text_five": "Ucuşyň öň ýanyndaky barlag"
 }

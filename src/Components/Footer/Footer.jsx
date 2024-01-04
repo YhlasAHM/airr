@@ -8,6 +8,8 @@ import logo_onee from '../../assets/images/Frame_7101.png'
 
 import { Link } from 'react-router-dom'
 
+import { Translate } from '../Translate/Translate'
+
 const Footer = () => {
 
     return (
@@ -29,22 +31,21 @@ const Footer = () => {
                                                 </div>
                                             </div>
                                             <div class="footer-widget__about-text-box">
-                                                <p class="text-white">Hazirki zaman terminallary,
-                                                    birnace dilleri bilyan isgarler we yolagcylaryn rahatlygy.</p>
+                                                <p class="text-white"><Translate title='footer_pg_text_one' /></p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                         <div>
                                             <div class="footer-widget__title-box">
-                                                <h3 class="footer-widget__title">YOLAGCYLAR UCIN</h3>
+                                                <h3 class="footer-widget__title"><Translate title='passengers' /></h3>
                                             </div>
                                             <ul class="footer-widget__Explore-list list-unstyled">
-                                                <li><Link to={'/online_table'}>Onlayn tablo</Link></li>
-                                                <li><a >Gatnawlaryn rejesi</a></li>
-                                                <li><a >Goslary gecirmegin duzgunleri</a></li>
-                                                <li><Link to={'/contact'}>Business Lounge</Link></li>
-                                                <li><Link to={'/contact'}>Ucusyn on yanyndaky barlag</Link></li>
+                                                <li><Link to={'/online_table'}><Translate title='online_table' /></Link></li>
+                                                <li><a><Translate title='footer_pg_text_two' /></a></li>
+                                                <li><a><Translate title='footer_pg_text_three' /></a></li>
+                                                <li><Link to={'/contact'}><Translate title='footer_pg_text_four' /></Link></li>
+                                                <li><Link to={'/contact'}><Translate title='footer_pg_text_five' /></Link></li>
                                             </ul>
                                         </div>
                                     </div>
