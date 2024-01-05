@@ -39,7 +39,7 @@ const Video = () => {
                 </div>
             </div>
             <Modal className='modalll' title="Video" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                <div class="wow fadeInUp" data-wow-delay="100ms">
+                <div class="wow fadeInUp">
                     <div class="gallery-page__single">
                         <div>
                             <video width={'100%'} controls >

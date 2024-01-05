@@ -13,3 +13,7 @@
     background-color: white !important;
     color: black !important;
 }
+
+.video-one__video-link button:hover {
+    background-color: #009000 !important;
+}

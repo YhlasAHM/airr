@@ -31,11 +31,11 @@
 }
 
 .imgg {
-    width: 10rem;
+    width: 14rem;
 }
 
 .imggg {
-    width: 3.9rem;
+    width: 4.5rem;
 }
 
 .Header_footer ul {
@@ -110,9 +110,9 @@
     background-color: #009000;
 }
 
-.MuiSvgIcon-root,
-.MuiSvgIcon-fontSizeMedium,
-.css-i4bv87-MuiSvgIcon-root {
+.Info_panel .MuiSvgIcon-root,
+.Info_panel .MuiSvgIcon-fontSizeMedium,
+.Info_panel .css-i4bv87-MuiSvgIcon-root {
     width: 16px !important;
 }
 

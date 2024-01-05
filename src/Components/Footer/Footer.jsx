@@ -10,6 +10,12 @@ import { Link } from 'react-router-dom'
 
 import { Translate } from '../Translate/Translate'
 
+
+import PhoneIcon from '@mui/icons-material/Phone';
+
+import EmailIcon from '@mui/icons-material/Email';
+
+
 const Footer = () => {
 
     return (
@@ -69,28 +75,28 @@ const Footer = () => {
                                                 <h3 class="footer-widget__title"><Translate title='footer_pg_contact' /></h3>
                                             </div>
                                             <ul class="footer-widget__Contact-list list-unstyled">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="fas fa-phone"></span>
+                                                <li className='d-flex text-white' style={{ alignItems: 'center' }}>
+                                                    <div class="icon me-2">
+                                                        <PhoneIcon />
                                                     </div>
                                                     <div class="text">
-                                                        <p><a href="tel:+9288006780">( 99312 ) 23-49-23</a></p>
+                                                        <a href="#tel:+99312234934">( 99312 ) 23-49-23</a>
                                                     </div>
                                                 </li>
-                                                <li>
+                                                <li className='d-flex text-white' style={{ alignItems: 'center' }}>
                                                     <div class="icon">
-                                                        <span class="fas fa-envelope"></span>
+                                                        <EmailIcon />
                                                     </div>
                                                     <div class="text">
-                                                        <p><a href="mailto:needhelp@company.com">asb@ashgabatairport.gov.tm</a></p>
+                                                        <a href="mailto:">asb@ashgabatairport.gov.tm</a>
                                                     </div>
                                                 </li>
-                                                <li>
+                                                <li className='d-flex text-white' style={{ alignItems: 'center' }}>
                                                     <div class="icon">
-                                                        <span class="fas fa-map-marker"></span>
+                                                        <EmailIcon />
                                                     </div>
                                                     <div class="text">
-                                                        <p className='text-white'>(99312) 23-48-17</p>
+                                                        <span>(99312) 23-48-17</span>
                                                     </div>
                                                 </li>
                                             </ul>

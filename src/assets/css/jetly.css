@@ -193,7 +193,7 @@ ul {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  border: 1px solid var(--jetly-base);
+  border: 1px solid #009000;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
   position: fixed;
@@ -209,7 +209,7 @@ ul {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: var(--jetly-base);
+  background-color: #009000;
   opacity: .3;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
@@ -221,11 +221,11 @@ ul {
 }
 
 .custom-cursor__hover {
-  background-color: var(--jetly-base);
+  background-color: #009000;
   opacity: 0.4;
 }
 
-.custom-cursor__innerhover {
+.custom-cursor__inner:hover {
   width: 25px;
   height: 25px;
   opacity: .4;
@@ -256,7 +256,7 @@ ul {
   left: -1px;
   bottom: -1px;
   right: -1px;
-  background-color: var(--jetly-base);
+  background-color: #009000;
   content: "";
   border-radius: 30px;
   transform: scaleY(0.0) rotateX(0deg);
@@ -291,7 +291,7 @@ ul {
   display: inline-block;
   font-size: 16px;
   line-height: 16px;
-  color: var(--jetly-base);
+  color: #009000;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -612,7 +612,7 @@ ul {
 }
 
 .main-menu__call-number a:hover {
-  color: var(--jetly-base);
+  color: #009000;
 }
 
 .stricky-header.main-menu {
@@ -1260,7 +1260,7 @@ ul {
 
 .home-showcase__image {
   position: relative;
-  background-color: var(--jetly-base);
+  background-color: #009000;
   overflow: hidden;
 }
 
@@ -3941,7 +3941,7 @@ ul {
 }
 
 .blog-one__btn a span:hover {
-  background-color: var(--jetly-base);
+  background-color: #009000;
   color: var(--jetly-white);
 }
 
@@ -4863,6 +4863,11 @@ ul {
   position: relative;
   display: inline-block;
   z-index: 3;
+  border-radius: 1rem;
+}
+
+.video-one__video-link:hover {
+  background-color: #009000 !important;
 }
 
 .video-one__video-icon {
