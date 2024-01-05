@@ -118,105 +118,123 @@ const About_detail = () => {
                                                     icon_content_three=''
                                                 />
                                             </div>
-                                            <Content
-                                                title='Aerowokzal toplumyny ulanyş we tehniki abatlaýyş gullugy'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Howa hereketini dolandyryş gullugy'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Heläkçilikde-halas ediş we ýangyn bilen göreşmek gullugy (HHE we ÝGG)'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Aerodrom gullugy'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='VIP we CIP gullugy'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Ýolagçy gatnawlary guraýan gullugy'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Uçuşlaryň howpsuzlygyny we hilini dolandyryjy bölümi'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Ýangyç-çalgy serişdeleri gullugy'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
-                                            <Content
-                                                title='Howa hereketini dolandyrmagyň bitewi ulgamynyň baş merkeziniň baş bölümçesi'
-                                                btn_one={false} icon_one='phone'
-                                                icon_content_one=''
-                                                btn_two={false}
-                                                icon_two="email"
-                                                icon_content_two=''
-                                                btn_three={false}
-                                                icon_three="email"
-                                                icon_content_three=''
-                                            />
+                                            <div className="col">
+                                                <Content
+                                                    title='Aerowokzal toplumyny ulanyş we tehniki abatlaýyş gullugy'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa hereketini dolandyryş gullugy'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Heläkçilikde-halas ediş we ýangyn bilen göreşmek gullugy (HHE we ÝGG)'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Aerodrom gullugy'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='VIP we CIP gullugy'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Ýolagçy gatnawlary guraýan gullugy'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Uçuşlaryň howpsuzlygyny we hilini dolandyryjy bölümi'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Ýangyç-çalgy serişdeleri gullugy'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa hereketini dolandyrmagyň bitewi ulgamynyň baş merkeziniň baş bölümçesi'
+                                                    btn_one={false} icon_one='phone'
+                                                    icon_content_one=''
+                                                    btn_two={false}
+                                                    icon_two="email"
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three="email"
+                                                    icon_content_three=''
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
