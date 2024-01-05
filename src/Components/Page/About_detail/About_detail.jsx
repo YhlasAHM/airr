@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './About_detail.css'
+
 import img_one from '../../../assets/images/about_img1.png'
 import img_two from '../../../assets/images/about_img2.png'
 import About_card from '../../About_card/About_card'
@@ -55,23 +57,280 @@ const About_detail = () => {
                                     <button className='mb-2 w-100 fw-bold' onClick={() => handle_active()} ><Translate title="about_pg_detail_button" /></button>
                                     <div className='collapse__'>
                                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                                            {
-                                                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (
-                                                    <div className="col" key={item}>
-                                                        <Content
-                                                            title='Esasy elektron salgysy'
-                                                            btn_one={true} icon_one='phone'
-                                                            icon_content_one='asb@ashgabatairport.gov.tm'
-                                                            btn_two={true}
-                                                            icon_two="email"
-                                                            icon_content_two='asb@ashgabatairport.gov.tm'
-                                                            btn_three={true}
-                                                            icon_three="email"
-                                                            icon_content_three='asb@ashgabatairport.gov.tm' />
+                                            <div className="col">
+                                                <Content
+                                                    title='Esasy elektron salgysy'
+                                                    btn_one={true} icon_one='message'
+                                                    icon_content_one='asb@ashgabatairport.gov.tm'
+                                                    btn_two={false}
+                                                    icon_two=""
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň baş direktory'
+                                                    btn_one={true} icon_one='message'
+                                                    icon_content_one='gendirector@ashgabatairport.gov.tm'
+                                                    btn_two={false}
+                                                    icon_two=""
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň Baş direktorynyň orunbasary'
+                                                    btn_one={true} icon_one='message'
+                                                    icon_content_one='deputydirector@ashgabatairport.gov.tm'
+                                                    btn_two={false}
+                                                    icon_two=""
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň baş direktorynyň kömekçisi'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 234923'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='dirassistant@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Uçuşlaryň howpsuzlygyny dolandyrmak we Hil bölüminiň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 233540 ( факс )'
+                                                    btn_two={true}
+                                                    icon_two="phone"
+                                                    icon_content_two='+993 12 233490'
+                                                    btn_three={true}
+                                                    icon_three="message"
+                                                    icon_content_three='quality@ashgabatairport.gov.tm'
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň Merkezi önümçilik-dispetçer gullugy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 234183'
+                                                    btn_two={true}
+                                                    icon_two="phone"
+                                                    icon_content_two='+993 12 443214'
+                                                    btn_three={true}
+                                                    icon_three="message"
+                                                    icon_content_three='headops@ashgabatairport.gov.tm'
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň howa hereketini dolandyryş gullugynyň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 230199'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='chiefatc@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa hereketini dolandyryş gullugy - Etrap merkeziniň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 233354'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='chiefacc@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa hereketimiň guramagyň bir bitewi ulgamynyň Baş merkeziniň raýat sektory - howa menzilinde'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 233810'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='permission@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Ýöriteleşdirilen awtoulaglar gullugynyň başlygy'
+                                                    btn_one={true} icon_one='message'
+                                                    icon_content_one='specialtranspoirt@ashgabatairport.gov.tm'
+                                                    btn_two={false}
+                                                    icon_two=""
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň umumy bölüminiň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 234409'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='titaldep@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň önümçilik-dispetçer gullugynyň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 236007'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='aviaoper@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Buhgalteriýa hasabaty bölüminiň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 233792'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='accounting@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Merkezi önümçilik dispetçeri'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 234446'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='ops@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Poçta ýük daşamalaryna hyzmat edýän gullugynyň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 234592'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='cargo@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Şertnamalar bölüminiň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 233347'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='contract@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň VIP-yň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 378575'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='vip@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň ýolagçylara hyzmat ediş gullugynyň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 230146'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='servicepas@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Howa menziliniň ýolagçylara hyzmat ediş gullugy - arz-şykaýat bölümi'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 232035'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='lostandfound@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Ýolagçylara hyzmat edýän gullugynyň başlygy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='servicepas@ashgabatairport.gov.tm'
+                                                    btn_two={false}
+                                                    icon_two=""
+                                                    icon_content_two=''
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
+                                            <div className="col">
+                                                <Content
+                                                    title='Ýolagçylara hyzmat edýän gullugy'
+                                                    btn_one={true} icon_one='phone'
+                                                    icon_content_one='+993 12 232035'
+                                                    btn_two={true}
+                                                    icon_two="message"
+                                                    icon_content_two='servicepas@ashgabatairport.gov.tm'
+                                                    btn_three={false}
+                                                    icon_three=""
+                                                    icon_content_three=''
+                                                />
+                                            </div>
 
-                                                    </div>
-                                                ))
-                                            }
                                         </div>
                                     </div>
                                 </div>
