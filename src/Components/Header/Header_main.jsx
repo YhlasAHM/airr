@@ -90,7 +90,7 @@ const Header_main = () => {
                                 </div>
                             </div>
                             <div className="main-header-three__social mt-2">
-                                <a href="#" className='text-white'>Sorag-jogap gullugy</a>
+                                {/* <a href="#" className='text-white'>Sorag-jogap gullugy</a> */}
                                 <a href="#"> <Language_dropdown /> </a>
                             </div>
                         </div>

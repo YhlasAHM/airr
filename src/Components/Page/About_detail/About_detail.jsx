@@ -334,7 +334,7 @@ const About_detail = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='collapse_ mt-5'>
+                                <div className='collapse_ mt-2'>
                                     <button className='mb-2 w-100 fw-bold' onClick={() => handle_active_one()} ><Translate title="about_pg_detail_button_one" /></button>
                                     <div className='collapse___'>
                                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
