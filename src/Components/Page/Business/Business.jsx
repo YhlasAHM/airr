@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getPartners } from '../../../actions/partners.action'
 
 import { Link } from 'react-router-dom'
+import { Translate } from '../../Translate/Translate'
 
 
 const Business = () => {
@@ -44,7 +45,7 @@ const Business = () => {
                     <div class="services-page">
                         <div class="container">
                             <div class="section-title text-center">
-                                <h2 class="section-title__title">ISEWURLER</h2>
+                                <h2 class="section-title__title"><Translate title="business" /></h2>
                             </div>
                             <div class="row">
                                 {

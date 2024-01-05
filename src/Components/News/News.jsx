@@ -82,7 +82,7 @@ const News = ({ visible }) => {
                             }
                         </div>
                         <div className='d-flex justify-content-center'>
-                            <Air_button navigate_='/news' title="Ahlisini gorkez" img={plane_one} background_btn='#009000' color_btn='white' />
+                            <Air_button navigate_='/news' title="show_all" img={plane_one} background_btn='#009000' color_btn='white' />
                         </div>
                     </div>
                 </div> : null

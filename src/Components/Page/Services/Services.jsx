@@ -5,6 +5,9 @@ import { getServices } from '../../../actions/services.action';
 
 import { Link } from 'react-router-dom'
 
+import { Translate } from '../../Translate/Translate'
+
+
 const Services = () => {
 
     const dispatch = useDispatch()
@@ -41,7 +44,7 @@ const Services = () => {
             <section class="services-page">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h1 className='fw-bold'>HYZMATLARYMYZ</h1>
+                        <h1 className='fw-bold'> <Translate title='services' /> </h1>
                     </div>
                     <div class="row">
                         {results ? results.map(item => (

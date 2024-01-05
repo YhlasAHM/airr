@@ -21,7 +21,7 @@ const About_card = (props) => {
                         <div className='mb-3'> <Translate title={props.content} /></div>
                         {
                             props.button_ ?
-                                <div><Air_button navigate_={props.navigate__} title="Ahlisini gorkez" img={plane} background_btn='#009000' color_btn='white' /></div> : null
+                                <div><Air_button navigate_={props.navigate__} title="show_all" img={plane} background_btn='#009000' color_btn='white' /></div> : null
                         }
                     </div>
                 </div>

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getPassengers } from '../../../actions/passengers.action'
 
 import { Link } from 'react-router-dom'
+import { Translate } from '../../Translate/Translate'
 
 const Passengers = () => {
 
@@ -44,7 +45,7 @@ const Passengers = () => {
                 results ? <div class="services-page">
                     <div class="container">
                         <div class="section-title text-center">
-                            <h1 class="fw-bold">YOLAGCYLAR <br /> UCIN</h1>
+                            <h1 class="fw-bold"><Translate title='passengers' /></h1>
                         </div>
                         <div class="row">
                             {

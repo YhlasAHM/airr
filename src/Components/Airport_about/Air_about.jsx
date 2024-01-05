@@ -21,7 +21,7 @@ const Air_about = () => {
                                 <p class="we-fly__text"><Translate title='second_section_about' />
                                 </p>
                                 <div>
-                                    <Air_button title="Ginisleyin" img={plane} background_btn='white' color_btn='#009000' />
+                                    <Air_button title="extension" img={plane} background_btn='white' color_btn='#009000' />
                                 </div>
                             </div>
                         </div>

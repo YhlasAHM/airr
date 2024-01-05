@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getNews } from '../../../actions/news.action';
 
 import { Link } from 'react-router-dom'
+import { Translate } from '../../Translate/Translate';
 
 const News = () => {
 
@@ -33,7 +34,7 @@ const News = () => {
             <div class="news-page">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h1 class="fw-bold">TAZELIKLER</h1>
+                        <h1 class="fw-bold"><Translate title='news' /></h1>
                     </div>
                     <div class="row">
                         {results ? results.map((item) => (

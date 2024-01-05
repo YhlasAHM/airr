@@ -3,6 +3,7 @@ import './Page.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllGallery } from '../../../actions/all_gallery.action'
 import { useNavigate } from 'react-router'
+import { Translate } from '../../Translate/Translate'
 
 const GalleryPage = () => {
 
@@ -27,7 +28,7 @@ const GalleryPage = () => {
                 results ? <div class="gallery-page">
                     <div class="container">
                         <div class="section-title text-center">
-                            <h1 class="fw-bold">SURATLAR</h1>
+                            <h1 class="fw-bold"><Translate title='pictures' /></h1>
                         </div>
                         <div class="row">
                             {

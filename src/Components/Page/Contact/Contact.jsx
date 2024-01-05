@@ -1,6 +1,8 @@
 import React from 'react'
 import './Contact.css'
 
+import { Translate } from '../../Translate/Translate'
+
 const Contact = () => {
 
     return (
@@ -8,12 +10,12 @@ const Contact = () => {
             <div class="contact-page">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h2 class="section-title__title">BIZ BILEN HABARLASYN</h2>
+                        <h2 class="section-title__title"><Translate title='contact_us' /></h2>
                     </div>
                     <div class="row">
                         {
                             [1, 2, 3].map(item => (
-                                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                                <div key={item} class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                                     <div class="contact-page__single">
                                         <div class="contact-page__title-box">
                                             <div class="contact-page__title">
