@@ -17,12 +17,21 @@ import EmailIcon from '@mui/icons-material/Email';
 
 import image from '../../assets/images/shapes/site-footer-shape-1.png'
 
+import image_one from '../../assets/images/cta-one-bg-shape.png'
+import image_two from '../../assets/images/request-shape-2.png'
+
 const Footer = () => {
 
     return (
         <>
             <div className="Footer">
                 <footer class="site-footer">
+                    <div className='site-footer__shape-2'>
+                        <img src={image_one} alt="" />
+                    </div>
+                    <div className='site-footer__shape-3'>
+                        <img src={image_two} alt="" />
+                    </div>
                     <div class="container">
                         <div class="site-footer__inner">
                             <div class="site-footer__shape-1 zoom-fade-1 ">

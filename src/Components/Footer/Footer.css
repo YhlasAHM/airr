@@ -2,3 +2,29 @@
     text-decoration: none !important;
     color: white !important;
 }
+
+.site-footer__shape-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.site-footer__shape-3 {
+    position: absolute;
+    top: 0;
+    right: -1rem;
+}
+
+.site-footer__shape-3 img {
+    display: block;
+}
+
+.site-footer__shape-2 img {
+    display: block;
+    transform: rotateZ(45deg);
+    transform-origin: 120% 10%;
+}
+
+.site-footer {
+    overflow: hidden;
+}
