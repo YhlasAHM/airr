@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
 
+import './Partners.css'
+
 import plane_left from '../../assets/images/Frame_237.png'
 import plane_right from '../../assets/images/Frame_238.png'
 
@@ -68,7 +70,7 @@ const Partners = ({ visible }) => {
     return (
         <>
             {
-                results ? <div className="Partners mt-5 mb-5" id="partner">
+                results ? <div className="Partners pt-5 pb-5" id="partner">
                     <div className="container">
                         <h4 className='text-center pb-4 fw-bold'>
                             <div className="row d-flex justify-content-center">
@@ -85,13 +87,13 @@ const Partners = ({ visible }) => {
                                 </div>
                             </div>
                         </h4>
-                        <div className="container">
+                        <div className="container partners_items">
                             <OwlCarousel {...options}>
                                 {
                                     results.map(item => (
                                         <div class="item" key={item.id}>
-                                            <div class="img-fluid">
-                                                <img src={`http://95.85.127.28:3008/${item.logo}`} className='img-fluid' alt="" style={{ height: '8rem' }} />
+                                            <div class="img-fluid" style={{height:'75%'}}>
+                                                <img src={`http://95.85.127.28:3008/${item.logo}`} className='img-fluid' alt="" style={{ height:'100%' }} />
                                             </div>
                                         </div>
                                     ))

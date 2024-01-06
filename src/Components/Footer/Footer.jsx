@@ -15,6 +15,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 import EmailIcon from '@mui/icons-material/Email';
 
+import image from '../../assets/images/shapes/site-footer-shape-1.png'
 
 const Footer = () => {
 
@@ -24,8 +25,8 @@ const Footer = () => {
                 <footer class="site-footer">
                     <div class="container">
                         <div class="site-footer__inner">
-                            <div class="site-footer__shape-1 ">
-                                <img src={logo} alt="" />
+                            <div class="site-footer__shape-1 zoom-fade-1 ">
+                                <img src={image} alt="" />
                             </div>
                             <div class="site-footer__top">
                                 <div class="row">

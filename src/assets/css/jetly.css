@@ -4134,7 +4134,7 @@ ul {
   position: relative;
   display: block;
   z-index: 1;
-  background: #009000 !important;
+  background-color: #009000;
 }
 
 .site-footer__inner {
@@ -4148,7 +4148,7 @@ ul {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.05;
+  opacity: 0.20;
   z-index: -1;
 }
 
