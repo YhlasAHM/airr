@@ -43,7 +43,7 @@ const Footer = () => {
                                         <div class="footer-widget__column footer-widget__about">
                                             <div class="footer-widget__logo">
                                                 <div className='text-white'>
-                                                    <Link to={'/'}><img src={logo_onee} alt="" /></Link>
+                                                    <a href='#'><img src={logo_onee} alt="" /></a>
                                                 </div>
                                             </div>
                                             <div class="footer-widget__about-text-box">
