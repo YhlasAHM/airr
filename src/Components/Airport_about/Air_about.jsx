@@ -12,7 +12,7 @@ const Air_about = () => {
 
     return (
         <>
-            <div class="we_flyy pt-5 pb-5" id="air_about">
+            <div class="we_flyy" id="air_about">
                 <div class="container">
                     <div className="row">
                         <div class="col">

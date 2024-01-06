@@ -38,6 +38,33 @@
     width: 4.5rem;
 }
 
+.imgggg {
+    background-image: url('../../assets/images/Sky_2.png');
+    width: 100rem;
+    height: 40rem !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-slider-three {
+    position: relative;
+}
+
+.air_image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imgggg img {
+    width: 100%;
+}
+
 .Header_footer ul {
     margin: 0;
     padding: 0;

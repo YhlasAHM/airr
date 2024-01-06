@@ -13,11 +13,13 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 import EmailIcon from '@mui/icons-material/Email';
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import Language_dropdown from './Header_language_dropdown';
 
 const Header_main = () => {
+
+    const navigate = useNavigate()
 
     const menuActive = () => {
         const mobile_sidebar = document.querySelector('.mobile_sidebar')
@@ -29,7 +31,7 @@ const Header_main = () => {
             <div className="Header_main pt-3 mb-3">
                 <div className='container'>
                     <div className='d-flex justify-content-between text-center' style={{ alignItems: 'center' }}>
-                        <div className='header_main_left'>
+                        <div className='header_main_left' onClick={() => navigate('/')}>
                             <div className="image">
                                 <img src={logo} alt="" className='imgg' />
                             </div>

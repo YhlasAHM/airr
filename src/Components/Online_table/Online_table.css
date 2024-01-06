@@ -6,3 +6,8 @@
     padding-right: 1rem;
     box-shadow: .5px .5px 1px #eeeeee, -.5px -.5px 1px #eeeeee;
 }
+
+.online_table {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}

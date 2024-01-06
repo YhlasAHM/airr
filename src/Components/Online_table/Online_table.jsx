@@ -72,7 +72,7 @@ const Online_table = ({ visible }) => {
 
     return (
         <>
-            <div className="container pt-5 mb-5" id='onlayn_table'>
+            <div className="container online_table" id='onlayn_table'>
                 <h4 className='text-center pb-4 fw-bold'>
                     <div className="row d-flex justify-content-center">
                         <div className="col" style={{ position: 'relative' }}>
@@ -97,11 +97,10 @@ const Online_table = ({ visible }) => {
                     </div>
                     <Tabs defaultActiveKey="1" items={items} />
                 </div>
-                <div className='d-flex justify-content-center mt-4'>
+                <div className='d-flex justify-content-center pt-5'>
                     <Air_button navigate_='/online_table' title="show_all" img={plane} background_btn='#009000' color_btn='white' />
                 </div>
             </div>
-
         </>
     )
 }

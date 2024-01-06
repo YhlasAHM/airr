@@ -6,12 +6,12 @@ import plane from '../../assets/images/Plane_2.png'
 import plane_one from '../../assets/images/Group_1.png'
 import Marquee from 'react-fast-marquee';
 
-import imgg from '../../assets/images/Sky_2.png'
-
 import './Header.css'
 
 import { useTranslation } from "react-i18next";
 
+
+import air_image from '../../assets/images/Howa-menzil_2.png'
 
 const Plane_slider = () => {
 
@@ -20,10 +20,13 @@ const Plane_slider = () => {
     return (
         <>
             <div class="main-slider-three clearfix">
-                <div class="swiper-container">
-                    <div class="swiper-slide">
+                <div className='air_image'>
+                    <img src={air_image} alt="" />
+                </div>
+                <div class="swiper-container w-100">
+                    <div class="w-100">
                         <Marquee>
-                            <img src={imgg} alt="" />
+                            <div className='imgggg'></div>
                         </Marquee>
                     </div>
                     <div className='slider_overlay'>

@@ -38,7 +38,7 @@ const Passenger = ({ visible }) => {
     return (
         <>
             {
-                results ? <div className="Passenger pt-5 pb-5" id="passenger">
+                results ? <div className="Passenger" id="passenger">
                     <div className="container">
                         <h4 className='text-center pb-4 fw-bold'>
                             <div className="row d-flex justify-content-center">
@@ -55,17 +55,17 @@ const Passenger = ({ visible }) => {
                                 </div>
                             </div></h4>
                         <div class="benefits-one__right">
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
                                 {
                                     results.map(item => (
-                                        <div className="col" key={item.id}>
-                                            <div class="benefits-one__single">
+                                        <div className="col item" key={item.id}>
+                                            <div class="benefits-one__single w-100 h-100">
                                                 <div class="benefits-one__content">
                                                     <div class="benefits-one__icon">
                                                         <img src={`http://95.85.127.28:3008/${item.icon}`} alt="" />
                                                     </div>
                                                     <div class="benefits-one__title">
-                                                        <h3><Link to={`/passengers/${item.id}`} style={{ textDecoration: 'none' }}>{handle_delete(item.title)}</Link></h3>
+                                                        <h3><Link to={`/passengers/${item.id}`} style={{ textDecoration: 'none' }}>{item.title}</Link></h3>
                                                     </div>
                                                 </div>
                                             </div>

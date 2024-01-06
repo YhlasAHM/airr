@@ -40,7 +40,7 @@ const News = ({ visible }) => {
     return (
         <>
             {
-                results ? <div className="News mb-5" id="news">
+                results ? <div className="News" id="news">
                     <div className="container">
                         <h4 className='text-center pb-4 fw-bold'>
                             <div className="row d-flex justify-content-center">

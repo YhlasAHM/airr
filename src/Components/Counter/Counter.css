@@ -2,3 +2,8 @@
 .counter-one__box {
     background-color: #009000;
 }
+
+.Counter {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}

@@ -1,0 +1,14 @@
+.Passenger {
+    background-color: #eeeeee;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.Passenger .benefits-one__single {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Passenger .item {
+    height: 8rem;
+}

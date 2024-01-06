@@ -70,7 +70,7 @@ const Partners = ({ visible }) => {
     return (
         <>
             {
-                results ? <div className="Partners pt-5 pb-5" id="partner">
+                results ? <div className="Partners" id="partner">
                     <div className="container">
                         <h4 className='text-center pb-4 fw-bold'>
                             <div className="row d-flex justify-content-center">
@@ -92,8 +92,8 @@ const Partners = ({ visible }) => {
                                 {
                                     results.map(item => (
                                         <div class="item" key={item.id}>
-                                            <div class="img-fluid" style={{height:'75%'}}>
-                                                <img src={`http://95.85.127.28:3008/${item.logo}`} className='img-fluid' alt="" style={{ height:'100%' }} />
+                                            <div class="img-fluid" style={{ height: '75%' }}>
+                                                <img src={`http://95.85.127.28:3008/${item.logo}`} className='img-fluid' alt="" style={{ height: '100%' }} />
                                             </div>
                                         </div>
                                     ))

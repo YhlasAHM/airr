@@ -2,6 +2,10 @@
     aspect-ratio: .9/1;
 }
 
+.price-one {
+    background: #eeeeee;
+}
+
 .owl-dots {
     display: none !important;
 }

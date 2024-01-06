@@ -43,52 +43,50 @@ const Business = ({ visible }) => {
     return (
         <>
             {
-                results ? <div className='Business mb-5' id="business">
+                results ? <div className='Business' id="business">
                     <div className="container">
-                        <div class="services-one">
-                            <div class="section-title text-center">
-                                <h4 className='text-center pb-4 fw-bold'>
-                                    <div className="row d-flex justify-content-center">
-                                        <div className="col" style={{ position: 'relative' }}>
-                                            <div className={`fly ${visible == 'business' ? 'active_img_one' : null}`}>
-                                                <img src={plane_left} alt="" className='me-2' />
-                                            </div>
+                        <div class="section-title text-center">
+                            <h4 className='text-center fw-bold'>
+                                <div className="row d-flex justify-content-center">
+                                    <div className="col" style={{ position: 'relative' }}>
+                                        <div className={`fly ${visible == 'business' ? 'active_img_one' : null}`}>
+                                            <img src={plane_left} alt="" className='me-2' />
                                         </div>
-                                        <Translate title='business' />
-                                        <div className="col" style={{ position: 'relative' }}>
-                                            <div className={`fly_two ${visible == 'business' ? 'active_img_two' : null}`}>
-                                                <img src={plane_right} alt="" className='ms-2' />
-                                            </div>
+                                    </div>
+                                    <Translate title='business' />
+                                    <div className="col" style={{ position: 'relative' }}>
+                                        <div className={`fly_two ${visible == 'business' ? 'active_img_two' : null}`}>
+                                            <img src={plane_right} alt="" className='ms-2' />
                                         </div>
-                                    </div></h4>
-                            </div>
-                            <div class="row">
-                                {
-                                    results.map((item, index) => {
-                                        if (index <= 3) {
-                                            return (
-                                                <div key={item.id} class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                                                    <div class="services-one__single">
-                                                        <div class="services-one__img">
-                                                            <img src={`http://95.85.127.28:3008/${item.image}`} alt="" />
+                                    </div>
+                                </div></h4>
+                        </div>
+                        <div class="row">
+                            {
+                                results.map((item, index) => {
+                                    if (index <= 3) {
+                                        return (
+                                            <div key={item.id} class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                                <div class="services-one__single">
+                                                    <div class="services-one__img">
+                                                        <img src={`http://95.85.127.28:3008/${item.image}`} alt="" />
+                                                    </div>
+                                                    <div class="services-one__content">
+                                                        <div class="services-one__title-box">
+                                                            <h4 class="services-one__title"><Link to={`/business/${item.id}`} style={{ textDecoration: 'none' }}>{handle_delete_title(item.title)}</Link>
+                                                            </h4>
                                                         </div>
-                                                        <div class="services-one__content">
-                                                            <div class="services-one__title-box">
-                                                                <h4 class="services-one__title"><Link to={`/business/${item.id}`} style={{ textDecoration: 'none' }}>{handle_delete_title(item.title)}</Link>
-                                                                </h4>
-                                                            </div>
-                                                            <p class="services-one__text">{handle_delete(item.description)} </p>
-                                                            <div class="services-one__arrow">
-                                                                <Link to={`/business/${item.id}`} style={{ textDecoration: 'none' }}><i class="fas fa-angle-right"></i></Link>
-                                                            </div>
+                                                        <p class="services-one__text">{handle_delete(item.description)} </p>
+                                                        <div class="services-one__arrow">
+                                                            <Link to={`/business/${item.id}`} style={{ textDecoration: 'none' }}><i class="fas fa-angle-right"></i></Link>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            )
-                                        }
-                                    })
-                                }
-                            </div>
+                                            </div>
+                                        )
+                                    }
+                                })
+                            }
                         </div>
                     </div>
                 </div> : null
