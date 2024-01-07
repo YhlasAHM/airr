@@ -35,7 +35,7 @@ const Passengers_detail = () => {
                                     <div class="news-details__img">
                                         <img src={`http://95.85.127.28:3008/${data.icon}`} alt="" />
                                         <div class="news-details__date">
-                                            <p>18 July, 2022</p>
+                                            <div>18 July, 2022</div>
                                         </div>
                                     </div>
                                     <div class="news-details__content">

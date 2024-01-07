@@ -6,3 +6,10 @@
 .News .blog-one__content {
     height: 15rem;
 }
+
+.date {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 10px;
+}

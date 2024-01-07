@@ -45,7 +45,7 @@ const Business = () => {
                     <div class="services-page">
                         <div class="container">
                             <div class="section-title text-center">
-                                <h2 class="section-title__title"><Translate title="business" /></h2>
+                                <h1 class="fw-bold"><Translate title="business" /></h1>
                             </div>
                             <div class="row">
                                 {

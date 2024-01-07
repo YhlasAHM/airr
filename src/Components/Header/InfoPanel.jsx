@@ -20,7 +20,7 @@ const InfoPanel = () => {
                                     <PhoneIcon />
                                 </div>
                                 <div className='text'>
-                                    +993 12 234923
+                                    <a href="tel:+99312234923">+993 12 234923</a>
                                 </div>
                             </div>
                             <div className='email_icon d-flex ms-3' style={{ alignItems: 'center' }}>
@@ -28,7 +28,7 @@ const InfoPanel = () => {
                                     <EmailIcon type="small" />
                                 </div>
                                 <div className="text">
-                                    asb@ashgabatairport.gov.tm
+                                    <a href="mailto:asb@ashgabatairport.gov.tm">asb@ashgabatairport.gov.tm</a>
                                 </div>
                             </div>
                         </div>

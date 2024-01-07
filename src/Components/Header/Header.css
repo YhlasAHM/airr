@@ -208,6 +208,14 @@
     overflow-y: scroll;
 }
 
+.Info_panel .text a {
+    color: white;
+}
+
+.Info_panel .text a:hover {
+    color: white;
+}
+
 @media screen and (max-width:768px) {
     .Info_panel {
         display: none;

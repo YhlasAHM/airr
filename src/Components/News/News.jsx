@@ -69,7 +69,7 @@ const News = ({ visible }) => {
                                                     <div class="blog-one__content">
                                                         <ul class="blog-one__meta list-unstyled">
                                                             <li>
-                                                                <Link style={{ textDecoration: 'none' }} to={`${item.id}`}><div className='d-flex' style={{ alignContent: 'center', justifyContent: 'center' }}> <DateRangeIcon /> <p className='ms-2'>Wed. 08 Nov. 2023</p></div></Link>
+                                                                <Link style={{ textDecoration: 'none' }} to={`${item.id}`}><div className='d-flex' style={{ alignContent: 'center', justifyContent: 'center' }}> <div><DateRangeIcon /></div> <div className='date ms-2'>{item.updated_at}</div></div></Link>
                                                             </li>
                                                         </ul>
                                                         <h5><Link to={`${item.id}`} style={{ textDecoration: 'none', color: 'black' }} dangerouslySetInnerHTML={{ __html: handle_delete(item.content) }}></Link></h5>

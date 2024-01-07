@@ -15,7 +15,7 @@ const About = () => {
 
     return (
         <>
-            <div className='About mt-3 mb-5'>
+            <div className='About'>
                 <div className='container'>
                     <div className='mt-3 mb-5'>
                         <About_card title={'about_us'} content='' image={img} one={2} two={1} button_='' />
