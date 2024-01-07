@@ -39,6 +39,8 @@ const News_detail = () => {
 
     const navigate = useNavigate()
 
+    console.log(data)
+
     const handle_nav = (e) => {
         navigate(`/news/${e}`)
         window.location.reload()
@@ -62,8 +64,7 @@ const News_detail = () => {
                                             </div>
                                         </div>
                                         <div class="news-details__content">
-                                            <p class="news-details__text-1">
-                                                {data.content}
+                                            <p class="news-details__text-1" dangerouslySetInnerHTML={{ __html: data.content }}>
                                             </p>
                                         </div>
                                     </div>
@@ -84,8 +85,8 @@ const News_detail = () => {
                                                                     <div class="sidebar__post-content">
                                                                         <h3>
                                                                             <span class="sidebar__post-content-meta"><i
-                                                                                class="fas fa-user-circle"></i>Admin</span>
-                                                                            <a >{handle_delete(item.content)}</a>
+                                                                                class="fas fa-user-circle"></i>{item.updated_at}</span>
+                                                                            <a dangerouslySetInnerHTML={{ __html: handle_delete(item.content) }}></a>
                                                                         </h3>
                                                                     </div>
                                                                 </li>

@@ -39,8 +39,7 @@ const Business_detail = () => {
                                         </div>
                                     </div>
                                     <div class="news-details__content">
-                                        <p class="news-details__text-1">
-                                            {data.description}
+                                        <p class="news-details__text-1" dangerouslySetInnerHTML={{ __html: data.description }}>
                                         </p>
                                     </div>
                                 </div>

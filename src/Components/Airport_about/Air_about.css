@@ -2,6 +2,24 @@
     background-image: linear-gradient(to right, #009000 30%, #a79132);
     padding-top: 6rem;
     padding-bottom: 6rem;
+    position: relative;
+}
+
+.we_flyy button {
+    position: absolute;
+}
+
+.left_image_one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.right_image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .rotate_image {

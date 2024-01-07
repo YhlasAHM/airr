@@ -58,7 +58,7 @@ const Services = () => {
                                             <h4 class="services-one__title"><Link to={`${item.id}`} style={{ textDecoration: 'none' }}>{handle_delete_title(item.title)}</Link>
                                             </h4>
                                         </div>
-                                        <p class="services-one__text">{handle_delete(item.description)} </p>
+                                        <p class="services-one__text" > {handle_delete(item.description)} </p>
                                         <div class="services-one__arrow">
                                             <Link to={`${item.id}`} style={{ textDecoration: 'none' }}><i class="fas fa-angle-right"></i></Link>
                                         </div>

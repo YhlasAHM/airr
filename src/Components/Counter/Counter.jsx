@@ -8,6 +8,9 @@ import Grouop_two from '../../assets/images/Group_two.png'
 import Grouop_three from '../../assets/images/Group_three.png'
 import Grouop_four from '../../assets/images/Group_four.png'
 
+import left_image from '../../assets/images/request-shape_counter.png'
+import right_image from '../../assets/images/request-shape-1_counter.png'
+
 
 const Counter = () => {
 
@@ -22,6 +25,12 @@ const Counter = () => {
     return (
         <>
             <div className='Counter'>
+                <div className="left_image">
+                    <img src={right_image} alt="" />
+                </div>
+                <div className="right_image">
+                    <img src={left_image} alt="" />
+                </div>
                 <div class="counter-one">
                     <div class="container">
                         <ScrollTrigger onEnter={() => setCounterState(true)}>

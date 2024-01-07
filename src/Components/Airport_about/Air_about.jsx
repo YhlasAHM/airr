@@ -7,20 +7,28 @@ import plane from '../../assets/images/Plane_23.png'
 import { Translate } from '../Translate/Translate'
 
 
+import left_image from '../../assets/images/cta-one-bg-shape.png'
+import right_image from '../../assets/images/request-shape-1.png'
 
 const Air_about = () => {
 
     return (
         <>
             <div class="we_flyy" id="air_about">
+                <div className="right_image">
+                    <img src={right_image} alt="" style={{ display: 'block' }} />
+                </div>
+                <div className="left_image_one" >
+                    <img src={left_image} alt="" />
+                </div>
                 <div class="container">
                     <div className="row">
                         <div class="col">
                             <div>
-                                <h4 class="we-fly__title count-box"><Translate title='Ashgabat_International_Airport' /> </h4>
-                                <p class="we-fly__text"><Translate title='second_section_about' />
+                                <h2 class="text-white mb-4"><Translate title='Ashgabat_International_Airport' /></h2>
+                                <p class="text-white"><Translate title='second_section_about' />
                                 </p>
-                                <div>
+                                <div className='mt-4'>
                                     <Air_button title="extension" img={plane} background_btn='white' color_btn='#009000' />
                                 </div>
                             </div>

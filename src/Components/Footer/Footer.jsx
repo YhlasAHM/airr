@@ -2,8 +2,6 @@ import React from 'react'
 
 import './Footer.css'
 
-import logo from '../../assets/images/logo_one.png'
-
 import logo_onee from '../../assets/images/Frame_7101.png'
 
 import { Link } from 'react-router-dom'

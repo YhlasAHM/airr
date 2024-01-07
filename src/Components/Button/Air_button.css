@@ -5,6 +5,7 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     transition: all .5s;
+    z-index: 99999999 !important;
 }
 
 button:hover {
