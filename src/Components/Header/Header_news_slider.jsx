@@ -27,7 +27,7 @@ const Header_new_slider = () => {
 
     return (
         <>
-            <div className='Header_new_slider pt-2'>
+            <div className='Header_new_slider pt-2 pb-2'>
                 <Marquee pauseOnHover={true} speed={100}>
                     <ul className='slider'>
                         {
