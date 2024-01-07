@@ -49,7 +49,7 @@ const News = () => {
                                                 <Link to={`news/${item.id}`} style={{ textDecoration: 'none' }} ><div className='d-flex' style={{ alignContent: 'center', justifyContent: 'center' }}> <DateRangeIcon /> <p className='ms-2'>Wed. 08 Nov. 2023</p></div></Link>
                                             </li>
                                         </ul>
-                                        <h5><a href="news-details.html" style={{ textDecoration: 'none', color: 'black' }}>{handle_delete(item.content)}</a></h5>
+                                        <h5><a href="#" style={{ textDecoration: 'none', color: 'black' }} dangerouslySetInnerHTML={{ __html: handle_delete(item.content) }}></a></h5>
                                     </div>
                                 </div>
                             </div>
