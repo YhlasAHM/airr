@@ -11,3 +11,11 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
+.services-one__text {
+    font-size: 15px !important;
+}
+
+.services-one__content {
+    height: 17rem;
+}

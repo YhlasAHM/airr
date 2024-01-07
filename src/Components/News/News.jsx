@@ -33,7 +33,7 @@ const News = ({ visible }) => {
     const { results } = news
 
     const handle_delete = (e) => {
-        return e.substring(0, 100)
+        return e.substring(0, 50)
     }
 
 
@@ -72,7 +72,7 @@ const News = ({ visible }) => {
                                                                 <Link style={{ textDecoration: 'none' }} to={`${item.id}`}><div className='d-flex' style={{ alignContent: 'center', justifyContent: 'center' }}> <DateRangeIcon /> <p className='ms-2'>Wed. 08 Nov. 2023</p></div></Link>
                                                             </li>
                                                         </ul>
-                                                        <h5><Link to={`${item.id}`} style={{ textDecoration: 'none', color: 'black' }}>{handle_delete(item.content)}</Link></h5>
+                                                        <h5><Link to={`${item.id}`} style={{ textDecoration: 'none', color: 'black' }} dangerouslySetInnerHTML={{ __html: handle_delete(item.content) }}></Link></h5>
                                                     </div>
                                                 </div>
                                             </div>
