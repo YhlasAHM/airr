@@ -43,7 +43,7 @@ function App() {
         }
       </div>
 
-      Brendyoly  tm
+      Brendyoly  tm go
     </div>
   )
 }
