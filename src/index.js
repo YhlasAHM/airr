@@ -7,11 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Suspense } from 'react';
 
 import { BrowserRouter } from 'react-router-dom'
-
-import logo from './assets/images/AHHM-Preloader.gif'
-
-import store from './store';
-import { Provider } from 'react-redux';
+/* 
+import { Provider } from 'react-redux'; */
 import i18n from 'i18next';
 
 
@@ -44,7 +41,8 @@ const Loading = () => {
   return (
     <div className='loading v_100'>
       <div>
-        <img src={logo} alt='' />
+        loading
+        {/* <img src={logo} alt='' /> */}
       </div>
     </div>
   )
@@ -54,11 +52,11 @@ const root = ReactDOM.createRoot(document.getElementById('__react'));
 
 root.render(
   <Suspense fallback={<Loading />}>
-    <Provider store={store}>
+    {/* <Provider store={store}> */}
       <BrowserRouter>
         <App />
       </BrowserRouter >
-    </Provider>
+{/*     </Provider> */}
   </Suspense>
 );
 

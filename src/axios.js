@@ -40,7 +40,7 @@ const config = axios.create({
 
 export default config;  */
 
-import axios from 'axios'
+/* import axios from 'axios'
 
 const config = axios.create({
     baseURL: `http://95.85.127.28:3008/`,
@@ -49,4 +49,4 @@ const config = axios.create({
     }
 })
 
-export default config
+export default config */
